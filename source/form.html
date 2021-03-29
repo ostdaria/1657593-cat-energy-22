@@ -7,7 +7,7 @@
   <body class="page-body">
 
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип сайта Кэт энерджи">
         <!-- <img class="page-header__logo-image" src="img/logo-mobile-title.svg" width="101" height="18" alt=""> -->
       </a>
@@ -17,13 +17,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a>Подбор программы</a>
+              <a class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -32,20 +32,19 @@
 
     <main class="page-main container">
       <section class="selection-program">
-        <h2 class="visually-hidden">Подбор программы функционального питания для котов</h2>
+        <h1 class="selection-program__title">Подбор программы</h1>
         <div class="form">
-          <h3 class="form__title">Подбор программы</h3>
-          <p class="form__desc">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form method="" action="https://echo.htmlacademy.ru">
             <div class="container-questionary">
-              <ul class="questionary">
+              <ul class="form__questionary questionary">
                 <li class="questionary__item">
                   <label for="questionary__name">Имя:*</label>
                   <input class="questionary__input" type="text" name="" id="questionary__name" name="name" placeholder="Барсик">
                 </li>
                 <li class="questionary__item">
                   <label for="questionary__weight">Вес(кг):*</label>
-                  <input class="questionary__item__input" type="text" name="" id="questionary__weight" name="weight" placeholder="7">
+                  <input class="questionary__input" type="text" name="" id="questionary__weight" name="weight" placeholder="7">
                 </li>
                 <li class="questionary__item">
                   <label for="questionary__age">Возраст(лет):</label>
@@ -53,25 +52,25 @@
                 </li>
               </ul>
 
-              <ul class="selection">
+              <ul class="form__selection selection">
                 <li class="selection__item">
                   <input class="selection__input" type="radio" id="selection__slimming" name="slimming" checked>
-                  <label for="selection__slimming">Похудение</label>
+                  <label for="selection__label">Похудение</label>
                 </li>
                 <li class="selection__item">
                   <input class="selection__input" type="radio" id="selection__weight" name="weight-gain">
-                  <label for="selection__weight">Набор массы</label>
+                  <label for="selection__label">Набор массы</label>
                 </li>
                 <li class="selection__item">
                   <input class="selection__input" type="radio" id="selection__advice" name="advice">
-                  <label for="selection__advice">Не знаю (нужен ваш совет)</label>
+                  <label for="selection__label">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
             </div>
 
-            <div class="container-info">
-              <div class="contacts-info">
-                <h3 class="contacts-info__title">Контактные данные (владельца кота)</h3>
+            <div class="form__container-info container-info">
+              <fieldset class="contacts-info">
+                <legend class="contacts-info__title">Контактные данные (владельца кота)</legend>
                 <ul class="contacts-info__list">
                   <li class="contacts-info__item">
                     <label for="contacts-info__mail">E-mail:*</label>
@@ -82,36 +81,34 @@
                     <input class="contacts-info__input" type="text" id="contacts-info__phone" name="phone" placeholder="8 (960) 900-60-90">
                   </li>
                 </ul>
+              </fieldset>
+
+              <div class="form__comments comments">
+                <h2 class="comments__title">Комментарий</h2>
+                <textarea name="comments__textarea" id="comment-field" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
               </div>
 
-              <div class="comments">
-                <h3 class="comments__title">Комментарий</h3>
-                <p class="comments__item">
-                  <textarea name="comment" id="comment-field" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
-                </p>
-              </div>
-
-              <div class="additionally">
-                <h3 class="additionally__title">Дополнительно</h3>
+              <fieldset class="form__additionally additionally">
+                <legend class="additionally__title">Дополнительно</legend>
                 <ul class="additionally__list">
                   <li class="additionally__item">
                     <input class="additionally__input" type="checkbox" name="sweetener" id="additionally__sweetener" checked>
-                    <label for="additionally__sweetener">Сахарозаменитель</label>
+                    <label for="additionally__label">Сахарозаменитель</label>
                   </li>
                   <li class="additionally__item">
                     <input class="additionally__input" type="checkbox" name="water" id="additionally__water">
-                    <label for="additionally__water">Питьевая вода</label>
+                    <label for="additionally__label">Питьевая вода</label>
                   </li>
                   <li class="additionally__item">
                     <input class="additionally__input" type="checkbox" name="milk" id="additionally__milk">
-                    <label for="additionally__milk">Молоко</label>
+                    <label for="additionally__label">Молоко</label>
                   </li>
                   <li class="additionally__item">
                     <input class="additionally__input" type="checkbox" name="vitamins" id="additionally__vitamins">
-                    <label for="additionally__vitamins">Витамины</label>
+                    <label for="additionally__label">Витамины</label>
                   </li>
                 </ul>
-              </div>
+              </fieldset>
             </div>
             <button class="button" type="submit">Отправить заявку</button>
             <p class="form__required-field">* — Обязательное поле</p>
@@ -133,7 +130,7 @@
 
       <div class="page-footer__container">
         <div class="logo">
-          <a href="">
+          <a href="index.html">
             <!-- <svg></svg> -->
           </a>
         </div>
