@@ -45,7 +45,7 @@ exports.server = server;
 
 const watcher = () => {
   livereload.listen();
-  livereload.reload('./source/index.html');
+  livereload.reload('./source/**/*.html');
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }

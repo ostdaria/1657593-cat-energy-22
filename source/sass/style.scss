@@ -6,16 +6,28 @@
 
 // Blocks
 
-@import "blocks/page-body";
-@import "blocks/page-header";
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/page-main.scss";
+@import "blocks/slogan.scss";
 @import "blocks/nutrition-program.scss";
 @import "blocks/features-program.scss";
-@import "blocks/result-using";
+@import "blocks/result-using.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/page-footer__wrapper.scss";
-@import "blocks/page-footer__container";
+@import "blocks/logo.scss";
+@import "blocks/contacts.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-
+@import "blocks/selection-program.scss";
+@import "blocks/form.scss";
+@import "blocks/container-questionary.scss";
+@import "blocks/questionary.scss";
+@import "blocks/selection.scss";
+@import "blocks/contacts-info.scss";
+@import "blocks/comments.scss";
+@import "blocks/form__additionally.scss";
+@import "blocks/additionally.scss";
+@import "blocks/button.scss";
+@import "blocks/catalog.scss";
+@import "blocks/additional-goods";
+@import "blocks/additional-gift";

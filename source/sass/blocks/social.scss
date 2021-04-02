@@ -7,9 +7,11 @@
 
   &:hover path {
     fill: #68B738;
+    stroke: #68B738;
   }
 
   &:active path {
     fill: rgba(104, 183, 56, 0.3);
+    stroke: rgba(104, 183, 56, 0.3);
   }
 }

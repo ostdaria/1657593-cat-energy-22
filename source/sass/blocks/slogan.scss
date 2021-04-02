@@ -1,5 +1,4 @@
 .slogan__item {
-  height: 302px;
   font-size: 36px;
   line-height: 14px;
   background-color: #68B738;
@@ -14,16 +13,17 @@
 }
 
 .slogan__link {
-  text-decoration: none;
-  width: 280px;
-  height: 40px;
-  background-color: #68B738;
+  font-size: 14px;
+  line-height: 18px;
   color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 280px;
+  background-color: #68B738;
   padding: 7px 44px;
 }
 
 .slogan__link {
-
   &:hover {
     background-color: #5EAA2F;
   }
