@@ -5,6 +5,7 @@
 .contacts-info__title {
   font-size: 24px;
   line-height: 26px;
+  color: #000000;
 }
 
 .contacts-info__list {
@@ -18,10 +19,23 @@
   text-transform: uppercase;
 }
 
-.contacts-info__input::placeholder {
-  font-family: "Oswald", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-  text-transform: uppercase;
+.contacts-info__input {
+  width: 219px;
+  height: 45px;
+  border: 1px solid #CDCDCD;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+    text-transform: uppercase;
+  }
+  &:hover {
+    border: 1px solid #CDCDCD;
+  }
+  &:focus {
+    border: 1px solid #444444;
+  }
 }

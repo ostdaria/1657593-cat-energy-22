@@ -1,6 +1,9 @@
 .contacts {
-  height: 114px;
   background-color: #ffffff;
+}
+
+.contacts__container {
+  background-color: #F2F2F2;
 }
 
 .contacts__title {
@@ -14,4 +17,5 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  color: #444444;
 }

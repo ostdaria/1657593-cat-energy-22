@@ -2,6 +2,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .form__required-field {
@@ -13,4 +14,8 @@
   color: #FFFFFF;
   background-color: #68B738;
   padding: 7px 44px;
+}
+
+.form__additionally {
+  border: none;
 }
