@@ -1,0 +1,12 @@
+.logo {
+  border-bottom: 1px solid #D9D9D9;
+
+  &:hover path {
+    fill: rgba(0, 0, 0, 0.8);
+  }
+
+  &:active path {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+
+}

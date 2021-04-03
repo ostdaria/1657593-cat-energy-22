@@ -2,6 +2,7 @@ const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
+const livereload = require("gulp-livereload");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
@@ -18,6 +19,7 @@ const styles = () => {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
+    .pipe(livereload())
     .pipe(sync.stream());
 }
 
@@ -42,6 +44,8 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
+  livereload.listen();
+  livereload.reload('./source/**/*.html');
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
