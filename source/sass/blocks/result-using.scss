@@ -2,24 +2,42 @@
   font-size: 14px;
   line-height: 20px;
   height: 705px;
-  background-color: #EAEAEA;;
+  background-color: $basic-grey-light;
 }
 
 .result-using__title {
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
+  margin: 0;
+  padding: 27px 105px 33px 20px;
 }
 
 
 .result-using__text {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 18px;
-  color: #444444;
+  color: $special-dark-grey;
+  margin: 0;
+  padding: 0 20px 25px 20px;
+}
+
+
+.result-using__description {
+  padding: 0 20px 42px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.result-using__image {
+  padding-bottom: 15px;
 }
 
 .result-using__about-price {
   text-transform: uppercase;
+  margin: 0;
+  padding: 0 20px 0 50px;
 }
 
 .result-using__button-slider {
@@ -27,6 +45,71 @@
   font-size: 16px;
   text-transform: uppercase;
   border: none;
-  background-color: #EAEAEA;
+  background-color: $basic-grey-light;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .result-using {
+    background-color: $basic-white;
+  }
+
+  .result-using__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 27px 413px 63px 30px;
+  }
+
+  .result-using__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    padding: 0 40px 54px 30px;
+  }
+
+  .result-using__about-price {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    padding: 0 0 0 200px;
+  }
+
+  .result-using__slider {
+    background-color: $basic-grey-light;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .result-using__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 10px 413px 76px 110px;
+  }
+
+  .result-using {
+    background-color: $basic-white;
+  }
+
+  .result-using__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    padding: 0 800px 69px 110px;
+  }
+
+  .result-using__description {
+    display: flex;
+
+    justify-content: start;
+    padding: 0 600px 60px 110px;
+  }
+
+  .result-using__about-price {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    padding: 0;
+  }
 }
 

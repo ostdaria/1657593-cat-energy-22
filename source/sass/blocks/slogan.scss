@@ -1,35 +1,100 @@
+.slogan {
+}
+
 .slogan__item {
   font-size: 36px;
   line-height: 14px;
-  background-color: #68B738;
+  background-color: $basic-green;
   // background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
-  color: white;
+  color: $basic-white;
+
+}
+
+.slogan__title {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 27px 35px 25px 36px;
 }
 
 .slogan__lead {
   font-size: 14px;
+  line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0 62px 20px 60px;
 }
 
 .slogan__link {
   font-size: 14px;
   line-height: 18px;
-  color: white;
+  color: $basic-white;
   text-decoration: none;
   text-transform: uppercase;
   width: 280px;
-  background-color: #68B738;
-  padding: 7px 44px;
-}
+  background-color: $basic-green;
+  padding: 7px 84px;
 
-.slogan__link {
+
   &:hover {
-    background-color: #5EAA2F;
+    background-color: $basic_green-2;
   }
 
   &:active {
-    background-color: #5EAA2F;
-    color: rgba(255, 255, 255, 0.3);
+    background-color: $basic_green-2;
+    color: $basic-white-opacity;
   }
+}
+
+
+@media (min-width: $tablet-width) {
+  .slogan__item {
+    background-color: $basic-white;
+  }
+
+  .slogan__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+    text-align: left;
+    padding: 62px 237px 41px 117px;
+  }
+
+  .slogan__lead {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    text-align: left;
+    padding: 0 367px 49px 117px;
+  }
+
+  .slogan__link {
+    margin-left: 117px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slogan__item {
+    background-color: $basic-white;
+
+  }
+
+  .slogan__title {
+    color: $basic-black;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 62px 700px 41px 117px;
+  }
+
+  .slogan__lead {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    text-align: left;
+    padding: 0 367px 49px 117px;
+  }
+
 }

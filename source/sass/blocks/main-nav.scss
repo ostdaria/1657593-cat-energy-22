@@ -1,10 +1,13 @@
 .main-nav {
   width: 100%;
-  background-color: basic-white;
+  background-color: $basic-white;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
 }
 
 .main-nav__toggle {
   border: none;
+  background-color: red;
 }
 
 .main-nav__wrapper {
@@ -20,5 +23,31 @@
 
 .main-nav__link {
   text-decoration: none;
-  color: black;
+  color: $basic-black;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    width: $content-tablet;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: $content-desktop;
+  }
+
+  .main-nav__toggle {
+  display: none;
+  }
 }

@@ -1,1 +1,29 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
 
+.page-header__logo {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.page-header__logo-image {
+  // outline: 5px solid rgba(52, 20, 116, 0.8);
+  // outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-height: 60px;
+    padding: 0;
+    background-color: transparent;
+  }
+}
