@@ -1,6 +1,3 @@
-.slogan {
-}
-
 .slogan__item {
   font-size: 36px;
   line-height: 14px;
@@ -8,7 +5,7 @@
   // background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
   color: $basic-white;
-
+  margin-bottom: 10px;
 }
 
 .slogan__title {
@@ -37,7 +34,6 @@
   width: 280px;
   background-color: $basic-green;
   padding: 7px 84px;
-
 
   &:hover {
     background-color: $basic_green-2;
@@ -72,14 +68,16 @@
   }
 
   .slogan__link {
+    font-size: 20px;
+    line-height: 20px;
     margin-left: 117px;
+    padding: 14px 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slogan__item {
     background-color: $basic-white;
-
   }
 
   .slogan__title {
@@ -96,5 +94,4 @@
     text-align: left;
     padding: 0 367px 49px 117px;
   }
-
 }

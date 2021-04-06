@@ -1,13 +1,12 @@
 .nutrition-program {
   font-size: 24px;
   line-height: 37px;
-
 }
 
 .nutrition-program__list {
   list-style: none;
   padding: 22px 20px;
-  margin: 0px;
+  margin: 0;
 }
 
 .nutrition-program__item {
@@ -23,9 +22,12 @@
   text-transform: uppercase;
   font-weight: normal;
   margin: 0;
-  padding: 30px 70px 0 91px;
+  padding: 30px 59px 0 91px;
 }
 
+// .nutrition-program__item:nth-child(2) .nutrition-program__title {
+//   padding: 30px 27px 0 91px;
+// }
 
 .nutrition-program__text {
   font-family: Arial, Helvetica, sans-serif;
@@ -69,11 +71,12 @@
     line-height: 24px;
     margin: 0;
     padding: 0 17px 52px 53px;
+    border-bottom: none;
   }
 
   .nutrition-program__link {
     font-size: 20px;
-    padding: 0 548px 57px 52px;
+    padding: 0 548px 0 52px;
   }
 }
 
