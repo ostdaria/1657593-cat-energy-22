@@ -1,5 +1,28 @@
+.selection-program {
+  padding: 27px 20px 20px 20px;
+}
+
 .selection-program__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
+  margin: 0 10px 37px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .selection-program {
+    padding: 50px 30px 20px 69px;
+  }
+
+  .selection-program__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 54px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-program {
+    padding: 50px 110px 20px 110px;
+  }
 }

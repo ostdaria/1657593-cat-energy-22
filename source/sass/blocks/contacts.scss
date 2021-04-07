@@ -27,25 +27,37 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 0;
+    padding: 62px 72px 51px 71px;
   }
 
   .contacts__title {
     font-size: 20px;
     line-height: 21px;
-    padding: 62px 147px 51px 71px;
+    margin-right: 140px;
   }
 
   .contacts__text {
     font-size: 16px;
     line-height: 20px;
-    padding: 62px 72px 51px 148px;
+    margin-left: 148px;
     text-align: right;
+  }
+
+  .contacts-form {
+    background-color: $basic-grey;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
+    padding: 62px 89px 51px 76px;
+  }
 
+  .contacts__title {
+    margin-right: 87px;
+  }
+
+  .contacts__text {
+    margin-left: 0;
   }
 }

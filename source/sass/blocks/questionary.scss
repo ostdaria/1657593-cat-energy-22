@@ -4,6 +4,27 @@
   text-transform: uppercase;
   color: #444444;
   list-style: none;
+  margin: 0 0 40px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.questionary__item {
+  margin-bottom: 14px;
+
+  &:nth-child(1) .questionary__input {
+    width: 229px;
+  }
+
+  &:nth-child(2) .questionary__input {
+    width: 204px;
+  }
+
+  &:nth-child(3) .questionary__input {
+    width: 174px;
+  }
 }
 
 .questionary__input {
@@ -23,5 +44,49 @@
   }
   &:focus {
     border: 1px solid #444444;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .questionary {
+    margin: 0 0 72px 0;
+  }
+
+  .questionary__item {
+    &:nth-child(1) .questionary__input {
+      width: 567px;
+    }
+
+    &:nth-child(2) .questionary__input {
+      width: 536px;
+    }
+
+    &:nth-child(3) .questionary__input {
+      width: 497px;
+    }
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .questionary {
+    margin: 0 40px 0 0;
+  }
+
+  .questionary__item {
+    padding: 0;
+    margin: 0 0 20px 0;
+
+    &:nth-child(1) .questionary__input {
+      width: 506px;
+    }
+
+    &:nth-child(2) .questionary__input {
+      width: 475px;
+    }
+
+    &:nth-child(3) .questionary__input {
+      width: 436px;
+    }
   }
 }

@@ -1,15 +1,21 @@
 .contacts-info {
   border: none;
+  padding: 0;
+  margin: 0 0 40px 0;
 }
 
 .contacts-info__title {
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin: 0 90px 30px 5px;
+  padding: 0;
 }
 
 .contacts-info__list {
   list-style: none;
+  margin: 0 0 14px 0;
+  padding: 0;
 }
 
 .contacts-info__item {
@@ -17,6 +23,18 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+
+  &:nth-child(1) {
+    margin-bottom: 14px;
+  }
+
+  &:nth-child(1) .contacts-info__input {
+    width: 219px;
+  }
+
+  &:nth-child(2) .contacts-info__input {
+    width: 204px;
+  }
 }
 
 .contacts-info__input {
@@ -32,10 +50,67 @@
     color: #444444;
     text-transform: uppercase;
   }
+
   &:hover {
     border: 1px solid #CDCDCD;
   }
+
   &:focus {
     border: 1px solid #444444;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-info__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin: 0 150px 56px 0;
+  }
+
+  .contacts-info__list {
+    padding: 0;
+  }
+
+  .contacts-info__item {
+    &:nth-child(1) .contacts-info__input {
+      width: 551px;
+      padding: 10px 20px;
+    }
+
+    &:nth-child(2) .contacts-info__input {
+      width: 535px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-info {
+    margin: 0 0 65px 0;
+  }
+
+  .container-questionary {
+    display: flex;
+  }
+
+  .contacts-info__list {
+    display: flex;
+  }
+
+  .contacts-info__item {
+    &:nth-child(1) {
+      margin-right: 78px;
+    }
+
+    &:nth-child(1) .contacts-info__input {
+      width: 486px;
+      padding: 10px 20px;
+    }
+
+    &:nth-child(2) .contacts-info__input {
+      width: 472px;
+      padding: 10px 20px;
+    }
   }
 }

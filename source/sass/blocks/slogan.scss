@@ -1,3 +1,7 @@
+.slogan {
+  padding: 27px 20px 20px 20px;
+}
+
 .slogan__item {
   font-size: 36px;
   line-height: 14px;
@@ -12,8 +16,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  margin: 0;
-  padding: 27px 35px 25px 36px;
+  margin: 0 0 25px 0;
 }
 
 .slogan__lead {
@@ -21,8 +24,7 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  padding: 0 62px 20px 60px;
+  margin: 0 32px 29px 30px;
 }
 
 .slogan__link {
@@ -31,9 +33,8 @@
   color: $basic-white;
   text-decoration: none;
   text-transform: uppercase;
-  width: 280px;
   background-color: $basic-green;
-  padding: 7px 84px;
+  padding: 7px 70px 7px 75px;
 
   &:hover {
     background-color: $basic_green-2;
@@ -47,6 +48,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .slogan {
+    padding: 32px 30px 20px 30px;
+  }
+
   .slogan__item {
     background-color: $basic-white;
   }
@@ -56,7 +61,7 @@
     line-height: 60px;
     color: $basic-black;
     text-align: left;
-    padding: 62px 237px 41px 117px;
+    margin: 0 207px 41px 87px;
   }
 
   .slogan__lead {
@@ -64,18 +69,22 @@
     line-height: 20px;
     color: $basic-black;
     text-align: left;
-    padding: 0 367px 49px 117px;
+    margin: 0 337px 49px 88px;
   }
 
   .slogan__link {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 117px;
+    margin: 0 376px 0 82px;
     padding: 14px 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .slogan {
+    padding: 60px 110px 20px 110px;
+  }
+
   .slogan__item {
     background-color: $basic-white;
   }
@@ -84,7 +93,7 @@
     color: $basic-black;
     font-size: 60px;
     line-height: 60px;
-    padding: 62px 700px 41px 117px;
+    margin: 0 600px 41px 80px;
   }
 
   .slogan__lead {
@@ -92,6 +101,6 @@
     line-height: 20px;
     color: $basic-black;
     text-align: left;
-    padding: 0 367px 49px 117px;
+    margin: 0 337px 52px 88px;
   }
 }
