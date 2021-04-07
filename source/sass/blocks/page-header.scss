@@ -1,1 +1,33 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
 
+.page-header__logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px 10px 17px 20px;
+}
+
+.page-header__logo-image:last-child {
+  margin-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    padding: 24px 10px 17px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-height: 60px;
+    padding: 0;
+    background-color: transparent;
+  }
+}

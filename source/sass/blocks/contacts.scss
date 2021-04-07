@@ -1,5 +1,8 @@
 .contacts {
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 28px 19px 26px 19px;
 }
 
 .contacts__container {
@@ -11,6 +14,7 @@
   line-height: 18px;
   color: #111111;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .contacts__text {
@@ -18,4 +22,30 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 0;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 21px;
+    padding: 62px 147px 51px 71px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 62px 72px 51px 148px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+
+  }
 }
