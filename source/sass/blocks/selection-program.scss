@@ -6,23 +6,33 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
-  margin: 0 10px 37px 0;
+  margin: 0 0 37px 0;
+  // padding: 27px 20px 20px 20px;
+  // margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .selection-program {
-    padding: 50px 30px 20px 69px;
+    padding: 50px 30px 20px 30px;
   }
 
   .selection-program__title {
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 54px 0;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .selection-program {
-    padding: 50px 110px 20px 110px;
+    padding: 50px 70px 20px 70px;
+  }
+
+  .selection-program__title {
+    margin: 0 0 56px 0;
+    padding: 0 40px;
+    // padding: 50px 110px 20px 110px;
   }
 }

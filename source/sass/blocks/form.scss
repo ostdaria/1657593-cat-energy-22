@@ -50,8 +50,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    padding: 0 40px 0 40px;
+  }
+
   .form__description {
-    margin: 0 897px 66px 0;
+    margin: 0 800px 66px 0;
   }
 
   .form__button {
