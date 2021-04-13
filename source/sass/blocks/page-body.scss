@@ -3,3 +3,14 @@
   font-style: normal;
   font-weight: normal;
 }
+
+.page-body__container {
+  
+}
+
+@media (min-width: $desktop-width) {
+  .page-body__container {
+    max-width: 1220px;
+    margin: auto;
+  }
+}

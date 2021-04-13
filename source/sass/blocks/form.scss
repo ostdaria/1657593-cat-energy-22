@@ -51,7 +51,8 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding: 0 40px 0 40px;
+    // padding: 0 40px 0 40px;
+    padding: 0;
   }
 
   .form__description {
