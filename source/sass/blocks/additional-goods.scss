@@ -1,5 +1,6 @@
 .additional-goods__list {
   list-style: none;
+  padding: 0;
 }
 
 .additional-goods__title {
@@ -8,10 +9,13 @@
   font-weight: normal;
   color: #000000;
   border-bottom: 1px solid #CDCDCD;
+  padding: 0 0 35px 0;
+  margin: 25px 0 0 0;
 }
 
 .additional-goods__item {
   border-bottom: 1px solid #CDCDCD;
+  padding-bottom: 25px;
 }
 
 .additional-goods__subtitle {
@@ -20,6 +24,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+  margin: 13px 139px 13px 0;
 }
 
 .additional-goods__info {
@@ -27,12 +32,16 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 24px 0;
 }
 
 .additional-goods__button {
   color: #FFFFFF;
   background-color: #68B738;
   padding: 10px 109px;
+  margin: 0 0 15px 0;
   &:hover {
     background-color: #5EAA2F;
   }
@@ -40,4 +49,32 @@
     color: rgba(255, 255, 255, 0.3);
     background-color: #5EAA2F;
   }
+}
+
+@media (min-width: $tablet-width) {
+  .additional-goods__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 0 37px;
+    padding: 0 0 65px 0;
+  }
+
+  .additional-goods__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 26px 38px 28px 38px;
+  }
+
+  .additional-goods__button {
+    padding: 6px 286px;
+  }
+
+  .additional-goods__subtitle {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

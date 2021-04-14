@@ -1,5 +1,7 @@
 .additional-gift {
   background-color: #68B738;
+  padding: 58px 61px 43px 58px;
+  margin-top: 39px;
 }
 
 .additional-gift__description {
@@ -7,4 +9,25 @@
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  margin: 0;
+  text-align: center;
+  margin-top: 128px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-gift  {
+    padding: 58px 31px 43px 38px;
+  }
+
+  // .additional-gift__description {
+  //   text-align: left;
+  //   margin: 0 40px 0 400px;
+  //   padding: 0;
+  // }
+
+
+}
+
+@media (min-width: $desktop-width) {
+
 }
