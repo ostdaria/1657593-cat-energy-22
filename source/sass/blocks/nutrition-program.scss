@@ -81,13 +81,14 @@
   .nutrition-program__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 82px 110px 71px 110px;
+    // padding: 82px 110px 71px 110px;
+    padding: 82px 0 71px 0;
   }
 
   .nutrition-program__item {
     // min-height: 374px;
     // min-width: 570px;
-    
+
     &:nth-child(1) {
       margin-bottom: 0;
       margin-right: 40px;

@@ -7,8 +7,8 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
-  border-bottom: 1px solid #EBEBEB;
-  color: #000000;
+  border-bottom: 1px solid $special-grey-2;
+  color: $basic-black;
   margin: 0;
   padding: 0 0 41px 0;
 }
@@ -21,7 +21,7 @@
 .catalog__item {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: 1px solid $special-grey-2;
 }
 
 .catalog__caption {
@@ -29,7 +29,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #222222;
+  color: $special-dark-grey-2;
   // : 0 64px 14px 0;
 }
 
@@ -37,7 +37,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $special-dark-grey;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -49,23 +49,23 @@
 }
 
 .catalog__button {
-  color: #FFFFFF;
-  background-color: #68B738;
+  color: $basic-white;
+  background-color: $basic-green;
   padding: 10px 109px;
   text-align: center;
   &:hover {
-    background-color: #5EAA2F;
+    background-color: $basic_green-2;
   }
   &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5EAA2F;
+    color: $basic-white-opacity;
+    background-color: $basic_green-2;
   }
 }
 
 .catalog__more-product {
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $basic-grey-dark;
   text-transform: uppercase;
   margin: 78px 37px 8px 37px;
 }
@@ -74,21 +74,21 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $special-dark-grey;
   margin: 0 30px 21px 29px;
 }
 
 .catalog__button-more {
-  color: #444444;
-  background-color: #F2F2F2;
+  color: $special-dark-grey;
+  background-color: $basic-grey;
   padding: 10px 94px;
   margin: 0 0 25px 0;
   &:hover {
-    color: #444444;
-    background-color: #EBEBEB;
+    color: $special-dark-grey;
+    background-color: $special-grey-2;
   }
   &:active {
-    color: rgba(68, 68, 68, 0.3);
+    color: $special-dark-grey-opacity;
   }
 }
 
@@ -169,10 +169,11 @@
     text-align: center;
     padding: 10px 79px;
     margin: 0;
-
   }
 }
 
 @media (min-width: $desktop-width) {
-
+  .catalog {
+    padding: 32px 0 20px 0;
+  }
 }

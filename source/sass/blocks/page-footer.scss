@@ -12,10 +12,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__wrapper {
-    // margin: auto;
-  }
-
   .page-footer__container {
     display: grid;
     max-width: 1220px;
