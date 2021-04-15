@@ -12,9 +12,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    // margin: auto;
+  }
+
   .page-footer__container {
     display: grid;
+    max-width: 1220px;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 47px 110px 12px 110px;
+    padding: 47px 10px 12px 10px;
   }
 }

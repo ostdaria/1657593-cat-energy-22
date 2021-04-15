@@ -7,14 +7,14 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
-  color: #000000;
-  border-bottom: 1px solid #CDCDCD;
+  color: $basic-black;
+  border-bottom: 1px solid $special-grey;
   padding: 0 0 35px 0;
   margin: 25px 0 0 0;
 }
 
 .additional-goods__item {
-  border-bottom: 1px solid #CDCDCD;
+  border-bottom: 1px solid $special-grey;
   padding-bottom: 25px;
 }
 
@@ -23,7 +23,7 @@
   font-weight: normal;
   line-height: 16px;
   text-transform: uppercase;
-  color: #222222;
+  color: $special-dark-grey-2;
   margin: 13px 139px 13px 0;
 }
 
@@ -31,23 +31,23 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 14px;
-  color: #444444;
+  color: $special-dark-grey;
   display: flex;
   justify-content: space-between;
   margin: 0 0 24px 0;
 }
 
 .additional-goods__button {
-  color: #FFFFFF;
-  background-color: #68B738;
+  color: $basic-white;
+  background-color: $basic-green;
   padding: 10px 109px;
   margin: 0 0 15px 0;
   &:hover {
-    background-color: #5EAA2F;
+    background-color: $basic_green-2;
   }
   &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5EAA2F;
+    color: $basic-white-opacity;
+    background-color: $basic_green-2;
   }
 }
 

@@ -26,10 +26,14 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    // padding: 30px 110px 30px 110px;
     padding: 30px 10px 30px 10px;
     min-height: 60px;
     background-color: transparent;
+  }
+
+  .page-header__wrapper {
+    max-width: 1220px;
+    margin: auto;
   }
 
   .page-header__logo {
