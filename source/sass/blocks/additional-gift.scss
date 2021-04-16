@@ -19,16 +19,15 @@
     padding: 38px 31px 43px 38px;
     margin-top: 59px;
   }
-
-  // .additional-gift__description {
-  //   text-align: left;
-  //   margin: 0 40px 0 400px;
-  //   padding: 0;
-  // }
-
-
 }
 
 @media (min-width: $desktop-width) {
+  .additional-gift {
+    padding: 38px 43px 20px 41px;
+    margin: 117px 0 65px 40px;
+  }
 
+  .additional-gift__description {
+    margin-top: 153px;
+  }
 }
