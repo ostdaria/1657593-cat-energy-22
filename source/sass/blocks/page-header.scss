@@ -1,4 +1,4 @@
-.page-header {
+.page-header__wrapper {
   display: flex;
   justify-content: space-between;
   padding: 11px 20px 20px 20px;
@@ -14,21 +14,23 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header__wrapper {
     display: flex;
     justify-content: space-between;
   }
 
   .page-header__logo {
-    // padding: 24px 10px 17px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding: 30px 10px 30px 10px;
+    padding: 30px 0 30px 0;
     min-height: 60px;
     background-color: transparent;
+  }
+
+  .page-header__wrapper {
   }
 
   .page-header__logo {

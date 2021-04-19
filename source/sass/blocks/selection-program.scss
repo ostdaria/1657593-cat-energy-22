@@ -7,8 +7,6 @@
   line-height: 36px;
   font-weight: normal;
   margin: 0 0 37px 0;
-  // padding: 27px 20px 20px 20px;
-  // margin: 0;
   padding: 0;
 }
 
@@ -26,15 +24,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .selection-program__container {
+    padding: 0;
+  }
+
   .selection-program {
-    padding: 50px 10px 20px 10px;
-    // padding: 0;
+    padding: 50px 0 20px 0;
   }
 
   .selection-program__title {
     margin: 0 0 56px 0;
-    // padding: 0 40px;
     padding: 0;
-    // padding: 50px 110px 20px 110px;
   }
 }

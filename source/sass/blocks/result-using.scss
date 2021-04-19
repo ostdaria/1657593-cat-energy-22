@@ -1,4 +1,4 @@
-.result-using {
+.result-using__container {
   font-size: 14px;
   line-height: 20px;
   height: 705px;
@@ -6,7 +6,7 @@
   padding: 27px 20px 20px 20px;
 }
 
-.result-using__container {
+.result-using__holder {
   // padding: 27px 20px 20px 20px;
 }
 
@@ -56,7 +56,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .result-using {
+  .result-using__container {
     background-color: $basic-white;
   }
 
@@ -111,33 +111,40 @@
   .result-using__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 70px 76px 110px;
+    margin: 0 70px 76px 0;
   }
 
   .result-using {
+    background-color: $basic-grey;
+  }
+
+  .result-using__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: $basic-grey;
+    padding: 20px 0 20px 0;
   }
 
   .result-using__text {
     font-size: 16px;
     line-height: 24px;
     color: $basic-black;
-    margin: 0 134px 69px 110px;
+    margin: 0 134px 69px 0;
   }
 
   .result-using__description {
     display: flex;
     justify-content: start;
-    margin: 0 134px 60px 110px;
+    margin: 0 134px 60px 0;
   }
 
   .result-using__image {
+    &:nth-child(1) {
+      margin-right: 20px;
+    }
+
     margin-bottom: 60px;
   }
-
-
 
   .result-using__about-price {
     font-size: 20px;

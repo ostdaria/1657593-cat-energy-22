@@ -90,7 +90,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .additional-goods {
+  .additional-goods__container {
     display: grid;
     grid-template-columns: max-content 1fr;
   }

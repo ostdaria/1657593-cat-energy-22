@@ -4,11 +4,3 @@
   font-weight: normal;
 }
 
-
-@media (min-width: $desktop-width) {
-  .page-body__header-wrapper,
-  .page-body__main-wrapper {
-    max-width: 1220px;
-    margin: auto;
-  }
-}
