@@ -7,18 +7,15 @@
   margin: 0 60px 21px 80px;
 }
 
-.social__item {
-}
-
 .social__link {
   &:hover path {
-    fill: #68B738;
-    stroke: #68B738;
+    // fill: #68B738;
+    stroke: $basic-green;
   }
 
   &:active path {
-    fill: rgba(104, 183, 56, 0.3);
-    stroke: rgba(104, 183, 56, 0.3);
+    // fill: $basic-green-opacity;
+    stroke: $basic-green-opacity;
   }
 }
 

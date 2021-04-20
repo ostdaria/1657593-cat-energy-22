@@ -2,7 +2,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: $basic-black;
   margin: 0 54px 39px 0;
 }
 
@@ -14,8 +14,8 @@
 }
 
 .form__button {
-  color: #FFFFFF;
-  background-color: #68B738;
+  color: $basic-white;
+  background-color: $basic-green;
   padding: 7px 77px;
   align-items: center;
   margin-bottom: 21px;
@@ -29,7 +29,7 @@
   .form__description {
     font-size: 20px;
     line-height: 30px;
-    margin: 0 340px 66px 0;
+    margin: 0 309px 66px 0;
   }
 
   .form__button {
@@ -56,7 +56,7 @@
   }
 
   .form__description {
-    margin: 0 800px 66px 0;
+    margin: 0 869px 66px 0;
   }
 
   .form__button {

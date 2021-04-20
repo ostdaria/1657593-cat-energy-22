@@ -7,7 +7,7 @@
 .contacts-info__title {
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $basic-black;
   margin: 0 90px 30px 0;
   padding: 0;
 }
@@ -21,55 +21,61 @@
 .contacts-info__item {
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $special-dark-grey;
   text-transform: uppercase;
-
-  &:nth-child(1) {
-    margin-bottom: 14px;
-  }
+  display: flex;
 
   &:nth-child(1) .contacts-info__input {
     width: 219px;
+    margin: 0 0 14px 11px;
   }
 
   &:nth-child(2) .contacts-info__input {
     width: 204px;
+    margin: 0 0 14px 9px;
   }
+}
+
+.contacts-info__item label {
+  margin-top: 12px;
 }
 
 .contacts-info__input {
   width: 219px;
   height: 45px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid $special-grey;
   box-sizing: border-box;
+  padding: 14px 50px 14px 15px;
 
   &::placeholder {
     font-family: "Oswald", Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
-    color: #444444;
+    color: $special-dark-grey;
     text-transform: uppercase;
   }
 
   &:hover {
-    border: 1px solid #CDCDCD;
+    border: 1px solid $special-grey;
   }
 
   &:focus {
-    border: 1px solid #444444;
+    border: 1px solid $special-dark-grey;
   }
 }
 
 @media (min-width: $tablet-width) {
   .contacts-info {
     margin: 0 0 65px 0;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .contacts-info__title {
     font-size: 36px;
     line-height: 36px;
     padding: 0;
-    margin: 0 150px 56px 0;
+    margin: 0 100px 56px 0;
   }
 
   .contacts-info__list {
@@ -78,15 +84,24 @@
   }
 
   .contacts-info__item {
+    font-size: 20px;
+    line-height: 30px;
+
     &:nth-child(1) .contacts-info__input {
       width: 551px;
       padding: 10px 20px;
+      margin: 0 0 14px 19px;
     }
 
     &:nth-child(2) .contacts-info__input {
       width: 535px;
       padding: 10px 20px;
+      margin: 0 0 0 14px;
     }
+  }
+
+  .contacts-info__item label {
+    margin-top: 5px;
   }
 }
 
@@ -105,17 +120,28 @@
 
   .contacts-info__item {
     &:nth-child(1) {
-      margin-right: 100px;
+      margin-right: 60px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 60px;
     }
 
     &:nth-child(1) .contacts-info__input {
       width: 486px;
-      padding: 10px 20px;
+      padding: 15px 20px 10px 20px;
     }
 
     &:nth-child(2) .contacts-info__input {
       width: 472px;
-      padding: 10px 20px;
+      padding: 15px 20px 10px 20px;
+    }
+  }
+
+  .contacts-info__input {
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }

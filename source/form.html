@@ -14,7 +14,7 @@
           <img class="page-header__logo-image" src="img/logo-mobile-title.svg" width="101" height="18" alt="">
         </a>
 
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -25,7 +25,7 @@
                 <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link">Подбор программы</a>
+                <a class="main-nav__link main-nav__link--active">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -48,11 +48,11 @@
                     <input class="questionary__input" type="text" name="" id="questionary__name" name="name" placeholder="Барсик">
                   </li>
                   <li class="questionary__item">
-                    <label for="questionary__weight">Вес(кг):*</label>
+                    <label for="questionary__weight">Вес (кг):*</label>
                     <input class="questionary__input" type="text" name="" id="questionary__weight" name="weight" placeholder="7">
                   </li>
                   <li class="questionary__item">
-                    <label for="questionary__age">Возраст(лет):</label>
+                    <label for="questionary__age">Возраст (лет):</label>
                     <input class="questionary__input" type="text" name="" id="questionary__age" name="age" placeholder="7">
                   </li>
                 </ul>
@@ -82,7 +82,7 @@
                       <input class="contacts-info__input" type="text" id="contacts-info__mail" name="mail" placeholder="kuklachev@gmail.com">
                     </li>
                     <li class="contacts-info__item">
-                      <label for="contacts-info__phone">Телефон:</label>
+                      <label for="contacts-info__phone">Телефон:*</label>
                       <input class="contacts-info__input" type="text" id="contacts-info__phone" name="phone" placeholder="8 (960) 900-60-90">
                     </li>
                   </ul>
@@ -199,5 +199,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

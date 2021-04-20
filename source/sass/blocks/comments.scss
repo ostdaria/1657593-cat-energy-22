@@ -10,10 +10,10 @@
   font-family: "Oswald", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $special-dark-grey;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid #E7E7E7;
+  border: 1px solid $basic-grey-steel;
   resize: none;
   width: 280px;
   margin: 0 30px 40px 0;
@@ -28,7 +28,10 @@
   }
 
   .comments__textarea {
-    width: 631px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 600px;
+    height: 174px;
     text-align: left;
     margin: 0 0 65px 0;
     padding: 10px 10px 0 19px;
@@ -37,7 +40,7 @@
 
 @media (min-width: $desktop-width) {
   .comments__textarea {
-    width: 1180px;
+    width: 1220px;
     text-align: left;
     margin: 0 0 65px 0;
     padding: 10px 10px 0 19px;
