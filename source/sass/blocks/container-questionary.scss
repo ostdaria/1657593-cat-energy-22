@@ -1,3 +1,16 @@
 .container-questionary {
   border: none;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .container-questionary {
+    margin: 0 0 75px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container-questionary {
+    display: flex;
+  }
 }

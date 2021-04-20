@@ -5,7 +5,7 @@
   color: #444444;
   display: flex;
   justify-content: space-between;
-  padding: 22px 20px 22px 19px;
+  margin: 0;
 }
 
 .copyright__link {
@@ -49,7 +49,7 @@
 @media (min-width: $desktop-width) {
   .copyright {
     padding: 0;
-    margin: 0 0 0 220px;
+    margin: 0 0 0 255px;
     display: flex;
   }
 

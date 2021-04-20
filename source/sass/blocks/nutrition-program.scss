@@ -5,38 +5,33 @@
 
 .nutrition-program__list {
   list-style: none;
-  padding: 22px 20px;
+  padding: 10px 20px 20px 20px;
   margin: 0;
 }
 
 .nutrition-program__item {
   background-color: $basic-grey;
   margin: 0;
-}
+  padding: 21px 20px 18px 19px;
 
-.nutrition-program__item:nth-child(1) {
-  margin-bottom: 20px;
+  &:nth-child(1) {
+    margin-bottom: 20px;
+  }
 }
 
 .nutrition-program__title {
   text-transform: uppercase;
   font-weight: normal;
-  margin: 0;
-  padding: 30px 59px 0 91px;
+  margin: 9px 0 29px 91px;
 }
-
-// .nutrition-program__item:nth-child(2) .nutrition-program__title {
-//   padding: 30px 27px 0 91px;
-// }
 
 .nutrition-program__text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
-  padding: 22px 33px 23px 20px;
+  margin: 0 13px 23px 0;
   border-bottom: 1px solid #D9D9D9;
-  margin: 0;
 }
 
 .nutrition-program__link {
@@ -45,7 +40,7 @@
   text-decoration: none;
   color: $basic-black;
   text-transform: uppercase;
-  padding: 18px 174px 22px 19px;
+  margin: 0;
 
   &:hover {
   }
@@ -60,23 +55,25 @@
     padding: 30px;
   }
 
+  .nutrition-program__item {
+    padding: 77px 62px 53px 52px;
+  }
+
   .nutrition-program__title {
-    margin: 0;
-    padding: 77px 229px 24px 53px;
+    margin: 0 0 24px 0;
   }
 
   .nutrition-program__text {
     color: $basic-black;
     font-size: 16px;
     line-height: 24px;
-    margin: 0;
-    padding: 0 17px 52px 53px;
+    margin: 0 0 52px 0;
     border-bottom: none;
   }
 
   .nutrition-program__link {
     font-size: 20px;
-    padding: 0 548px 0 52px;
+    margin: 0;
   }
 }
 
@@ -84,33 +81,39 @@
   .nutrition-program__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 82px 110px;
+    // padding: 82px 110px 71px 110px;
+    padding: 82px 0 71px 0;
   }
 
-  .nutrition-program__item:nth-child(1) {
-    margin-bottom: 0;
-    margin-right: 80px;
+  .nutrition-program__item {
+    // min-height: 374px;
+    // min-width: 570px;
+
+    &:nth-child(1) {
+      margin-bottom: 0;
+      margin-right: 40px;
+      padding: 77px 55px 59px 52px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 40px;
+      padding: 77px 92px 59px 33px;
+    }
   }
 
   .nutrition-program__title {
-    margin: 0;
-    padding: 77px 192px 73px 214px;
+    margin: 0 0 73px 180px;
   }
 
   .nutrition-program__text {
     font-size: 16px;
     line-height: 24px;
-    margin: 0;
-    padding: 0 51px 27px 52px;
     color: $basic-black;
+    margin: 0 0 27px 0;
   }
-
-  // .nutrition-program__item:nth-child(2)  .nutrition-program__text {
-  //   padding: 0 61px 27px 52px;
-  // }
 
   .nutrition-program__link {
     font-size: 20px;
-    padding: 0 350px 59px 52px;
+    margin: 0;
   }
 }

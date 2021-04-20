@@ -1,20 +1,37 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
+  padding: 39px 20px 22px 19px;
+}
+
+.page-footer__holder {
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 37px 30px 38px 30px;
+  }
+
+  .page-footer__holder {
+    background-image: url("../img/map-tablet.png");
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__container {
     display: grid;
+    max-width: 1220px;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 37px 110px 38px 110px;
+    padding: 47px 20px 12px 20px;
+  }
+
+  .page-footer__holder {
+    background-image: url("../img/map-desktop.png");
+    background-repeat: no-repeat;
   }
 }

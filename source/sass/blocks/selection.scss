@@ -4,4 +4,36 @@
   text-transform: uppercase;
   color: #222222;
   list-style: none;
+  margin: 0 0 40px 0;
+  padding: 0;
+  // padding: 0 23px 19px 0;
+}
+
+.selection__item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .selection {
+    padding: 20px;
+    margin: 0 50px 0 0;
+    border: 1px solid #E7E7E7;
+  }
+
+  .selection__item:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px 280px 25px 28px;
+    margin: 0;
+  }
+
+  .selection__item:nth-child(3) {
+    margin-bottom: 0;
+  }
 }

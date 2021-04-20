@@ -1,18 +1,27 @@
+.catalog {
+  padding: 10px 20px 20px 20px;
+}
+
 .catalog__title {
   font-family: "Oswald", Arial, sans-serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
-  border-bottom: 1px solid #EBEBEB;
-  color: #000000;
+  border-bottom: 1px solid $special-grey-2;
+  color: $basic-black;
+  margin: 0;
+  padding: 0 0 41px 0;
 }
 
 .catalog__list {
   list-style: none;
+  padding: 0;
 }
 
 .catalog__item {
-  border-bottom: 1px solid #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $special-grey-2;
 }
 
 .catalog__caption {
@@ -20,52 +29,187 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #222222;
+  color: $special-dark-grey-2;
 }
 
 .catalog__description {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $special-dark-grey;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.catalog__information {
+  margin-left: auto;
+  margin-bottom: 20px;
 }
 
 .catalog__button {
-  color: #FFFFFF;
-  background-color: #68B738;
+  color: $basic-white;
+  background-color: $basic-green;
   padding: 10px 109px;
+  margin-bottom: 25px;
+  text-align: center;
   &:hover {
-    background-color: #5EAA2F;
+    background-color: $basic_green-2;
   }
   &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5EAA2F;
+    color: $basic-white-opacity;
+    background-color: $basic_green-2;
   }
 }
 
 .catalog__more-product {
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $basic-grey-dark;
   text-transform: uppercase;
+  margin: 78px 37px 8px 37px;
 }
 
 .catalog__slogan {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: $special-dark-grey;
+  margin: 0 30px 21px 29px;
 }
 
 .catalog__button-more {
-  color: #444444;
-  background-color: #F2F2F2;
+  color: $special-dark-grey;
+  background-color: $basic-grey;
   padding: 10px 94px;
+  margin: 0 0 25px 0;
   &:hover {
-    color: #444444;
-    background-color: #EBEBEB;
+    color: $special-dark-grey;
+    background-color: $special-grey-2;
   }
   &:active {
-    color: rgba(68, 68, 68, 0.3);
+    color: $special-dark-grey-opacity;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 10px 28px 20px 30px;
+  }
+
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    border-bottom: none;
+    padding: 0;
+    margin: 30px 0 83px 0;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    background-color: $basic-grey;
+
+    &:nth-child(8) {
+      background-color: $basic-white;
+      border: 2px solid $basic-grey;
+      padding: 40px 18px;
+    }
+    margin: 0 0 59px 0;
+    padding: 0 34px 40px 34px;
+    border-bottom: none;
+  }
+
+  .catalog__caption {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 40px 21px 40px;
+    text-align: center;
+  }
+
+  .catalog__information {
+    margin: 0;
+  }
+
+  .catalog__button {
+    margin: 33px 0 0 0;
+    padding: 10px 93px;
+    text-align: center;
+  }
+
+  .catalog__description {
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid $special-grey;
+    padding: 7px 0 9px 0;
+  }
+
+  .catalog__info-defining {
+    margin: 0;
+  }
+
+  .catalog__more-product {
+    font-size: 20px;
+    margin: 40px 0 40px 0;
+    text-align: center;
+  }
+
+  .catalog__slogan {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 0 80px 0;
+  }
+
+  .catalog__button-more {
+    text-align: center;
+    padding: 10px 79px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 32px 0 20px 0;
+  }
+
+  .catalog__title {
+    margin: 0 0 83px 0;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .catalog__item {
+    padding: 0 39px 40px 39px;
+    margin: 0 40px 50px 0;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+
+    &:nth-child(8) {
+      padding: 40px 39px;
+      margin-right: 0;
+    }
+  }
+
+  .catalog__caption {
+    margin: 0 5px 21px 5px;
+  }
+
+  .catalog__button {
+    padding: 10px 53px;
+  }
+
+  .catalog__button-more {
+    padding: 10px 39px;
   }
 }

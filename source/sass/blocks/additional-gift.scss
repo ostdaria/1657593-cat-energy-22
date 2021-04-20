@@ -1,10 +1,33 @@
 .additional-gift {
-  background-color: #68B738;
+  background-color: $basic-green;
+  padding: 58px 61px 43px 58px;
+  margin-top: 39px;
 }
 
 .additional-gift__description {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: $basic-white;
+  margin: 0;
+  text-align: center;
+  margin-top: 128px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-gift {
+    padding: 38px 31px 43px 38px;
+    margin-top: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-gift {
+    padding: 38px 43px 20px 41px;
+    margin: 117px 0 65px 40px;
+  }
+
+  .additional-gift__description {
+    margin-top: 153px;
+  }
 }
