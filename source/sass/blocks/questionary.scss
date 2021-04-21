@@ -49,9 +49,11 @@
     color: $special-dark-grey;
     text-transform: uppercase;
   }
+
   &:hover {
     border: 1px solid $special-grey;
   }
+
   &:focus {
     border: 1px solid $special-dark-grey;
   }

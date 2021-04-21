@@ -1,6 +1,11 @@
+.additional-goods__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .additional-goods__list {
   list-style: none;
-  padding: 20px;
+  padding: 0;
   margin: 0;
 }
 
@@ -9,14 +14,20 @@
   line-height: 24px;
   font-weight: normal;
   color: $basic-black;
-  border-bottom: 1px solid $special-grey;
-  padding: 0 0 35px 0;
-  margin: 25px 0 0 0;
+  padding: 0;
+  margin: 25px 0 38px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .additional-goods__item {
-  border-bottom: 1px solid $special-grey;
   padding-bottom: 25px;
+  border-top: 1px solid $special-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $special-grey;
+  }
 }
 
 .additional-goods__subtitle {
@@ -43,9 +54,11 @@
   background-color: $basic-green;
   padding: 10px 109px;
   margin: 0 0 15px 0;
+
   &:hover {
     background-color: $basic_green-2;
   }
+
   &:active {
     color: $basic-white-opacity;
     background-color: $basic_green-2;
@@ -55,21 +68,20 @@
 @media (min-width: $tablet-width) {
   .additional-goods__list {
     padding: 0;
+
   }
 
   .additional-goods__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 37px 0 37px;
-    padding: 0 0 65px 26px;
+    margin: 0 0 65px 37px;
   }
 
   .additional-goods__item {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 26px 39px 26px 26px;
-    margin: 0 32px 0 38px;
+    padding: 26px 3px 26px 38px;
   }
 
   .additional-goods__button {
@@ -90,37 +102,36 @@
 }
 
 @media (min-width: $desktop-width) {
-  .additional-goods__container {
+  .additional-goods__holder {
     display: grid;
     grid-template-columns: max-content 1fr;
+    grid-gap: 80px;
   }
 
   .additional-goods__title {
-    margin: 0 0 0 0;
-    padding: 0 0 81px 0;
+    margin: 0 0 81px 0;
+    padding: 0;
   }
 
   .additional-goods__list {
-    margin: 0 40px 65px 0;
+    margin: 0;
   }
 
   .additional-goods__item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0;
-    margin: 0 0 0 0;
-  }
-
-  .additional-goods__subtitle {
-    margin: 25px 0 27px 0;
+    gap: 40px;
+    align-items: center;
+    padding: 15px 0 17px 0;
   }
 
   .additional-goods__info {
-    margin: 25px 0 27px 40px;
+    gap: 68px;
+    margin: 0;
   }
 
   .additional-goods__button {
-    padding: 10px 80px;
-    margin: 16px  0 16px 77px;
+    padding: 10px 84px;
+    text-align: center;
   }
 }

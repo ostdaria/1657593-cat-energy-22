@@ -185,11 +185,11 @@
     }
 
     &:hover {
-      color: rgba(0, 0, 0, 0.8);
+      color: $special-black-opacity;
     }
 
     &:active {
-      color: rgba(0, 0, 0, 0.6);
+      color: $special-dark-grey-opacity;
     }
   }
 }

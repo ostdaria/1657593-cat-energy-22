@@ -4,20 +4,12 @@
   padding: 39px 20px 22px 19px;
 }
 
-.page-footer__holder {
-  background-image: url("../img/map-mobile.png");
-  background-repeat: no-repeat;
-}
 
 @media (min-width: $tablet-width) {
   .page-footer__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .page-footer__holder {
-    background-image: url("../img/map-tablet.png");
-    background-repeat: no-repeat;
+    padding: 55px 30px 22px 30px;
   }
 }
 
@@ -28,10 +20,5 @@
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 47px 20px 12px 20px;
-  }
-
-  .page-footer__holder {
-    background-image: url("../img/map-desktop.png");
-    background-repeat: no-repeat;
   }
 }
