@@ -43,6 +43,7 @@
   border: none;
   background-color: $basic-grey-light;
   margin: 0;
+  padding: 0;
 }
 
 .result-using__slider-container {
@@ -108,7 +109,9 @@
   }
 
   .result-using__button-slider {
-    border-bottom: 1px dotted $basic-white;
+    font-size: 20px;
+
+    border-bottom: 1px dotted $basic-grey-neutral;
   }
 
   .result-using__scale {
@@ -116,7 +119,7 @@
     height: 6px;
     background-color: $special-grey;
     border-radius: 6px;
-    margin: 13px 0 0 0;
+    margin: 13px 10px 0 10px;
   }
 
   .result-using__toggle {
@@ -175,6 +178,10 @@
     text-align: right;
     padding: 0;
     margin: 0;
+  }
+
+  .result-using__about-price span {
+    margin-right: 60px;
   }
 
   .result-using__slider {
