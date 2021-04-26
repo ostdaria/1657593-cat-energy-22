@@ -2,7 +2,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: $special-dark-grey;
   list-style: none;
   margin: 0 0 40px 0;
   padding: 0;
@@ -13,24 +13,32 @@
 
 .questionary__item {
   margin-bottom: 14px;
+  display: flex;
 
   &:nth-child(1) .questionary__input {
     width: 229px;
+    margin: 0 0 0 10px;
   }
 
   &:nth-child(2) .questionary__input {
     width: 204px;
+    margin: 0 0 0 12px;
   }
 
   &:nth-child(3) .questionary__input {
     width: 174px;
+    margin: 0 0 0 9px;
   }
+}
+
+.questionary__item label {
+  margin-top: 12px;
 }
 
 .questionary__input {
   width: 229px;
   height: 45px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid $basic-grey-steel;
   box-sizing: border-box;
   padding: 12px 50px 10px 20px;
 
@@ -38,19 +46,23 @@
     font-family: "Oswald", Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
-    color: #444444;
+    color: $special-dark-grey;
     text-transform: uppercase;
   }
+
   &:hover {
-    border: 1px solid #CDCDCD;
+    border: 1px solid $special-grey;
   }
+
   &:focus {
-    border: 1px solid #444444;
+    border: 1px solid $special-dark-grey;
   }
 }
 
 @media (min-width: $tablet-width) {
   .questionary {
+    font-size: 20px;
+    line-height: 30px;
     margin: 0 0 72px 0;
   }
 
@@ -59,30 +71,38 @@
 
     &:nth-child(1) .questionary__input {
       width: 567px;
+      margin: 0 0 0 17px;
     }
 
     &:nth-child(2) .questionary__input {
       width: 536px;
+      margin: 0 0 0 21px;
     }
 
     &:nth-child(3) .questionary__input {
       width: 497px;
+      margin: 0 0 0 18px;
     }
 
     &:nth-child(3) {
       margin-bottom: 0;
     }
   }
+
+  .questionary__item label {
+    margin-top: 5px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .questionary {
-    margin: 0 86px 0 0;
+    margin: 0 117px 0 0;
   }
 
   .questionary__item {
     padding: 0;
     margin: 0 0 20px 0;
+
 
     &:nth-child(1) .questionary__input {
       width: 506px;
@@ -98,6 +118,15 @@
 
     &:nth-child(3) {
       margin-bottom: 0;
+    }
+  }
+
+  .questionary__input {
+    padding: 15px 50px 9px 20px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }

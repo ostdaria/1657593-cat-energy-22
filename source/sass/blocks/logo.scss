@@ -1,13 +1,13 @@
 .logo {
-  // border-bottom: 1px solid #D9D9D9;
+  // border-bottom: 1px solid $basic-grey-neutral;
   margin: 0 66px 32px 86px;
 
   &:hover path {
-    fill: rgba(0, 0, 0, 0.8);
+    fill: $special-black-opacity;
   }
 
   &:active path {
-    fill: rgba(0, 0, 0, 0.6);
+    fill: $special-dark-grey-opacity;
   }
 }
 
@@ -20,5 +20,7 @@
 }
 
 @media (min-width: $desktop-width) {
-
+  .logo {
+    margin: 0;
+  }
 }
