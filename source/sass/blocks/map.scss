@@ -9,12 +9,23 @@
   margin: 0;
 }
 
+.map__iframe {
+  width: 100%;
+  height: 362px;
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
   .map {
+    overflow: hidden;
     width: $content-tablet;
     height: 400px;
     background-image: url("/../img/map-tablet.png");
     margin: 0;
+  }
+
+  .map__iframe {
+    height: 400px;
   }
 }
 

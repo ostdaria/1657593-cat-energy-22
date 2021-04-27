@@ -6,7 +6,6 @@
   font-size: 36px;
   line-height: 14px;
   background-color: $basic-green;
-  // background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
   color: $basic-white;
   margin-bottom: 10px;
@@ -46,6 +45,11 @@
   }
 }
 
+// .slogan__image {
+//   position: absolute;
+//   top: 10px;
+//   left: 0;
+// }
 
 @media (min-width: $tablet-width) {
   .slogan {
@@ -54,6 +58,7 @@
 
   .slogan__item {
     background-color: $basic-white;
+    background-image: none;
   }
 
   .slogan__title {
