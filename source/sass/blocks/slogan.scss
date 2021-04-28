@@ -1,21 +1,49 @@
 .slogan {
-  padding: 27px 20px 20px 20px;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.slogan::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  min-width: 320px;
+  height: 302px;
+  background-image: url("../img/index-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/index-background-mobile@2x.jpg");
+  //   background-size: 640px auto;
+  // }
+}
+
+.slogan::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  min-width: 320px;
+  height: 302px;
+  background-color: $basic-green-light;
 }
 
 .slogan__item {
+  position: relative;
+  z-index: 2;
+  margin: 27px 0 60px 0;
   font-size: 36px;
   line-height: 14px;
-  background-color: $basic-green;
-  background-repeat: no-repeat;
   color: $basic-white;
-  margin-bottom: 10px;
 }
 
 .slogan__title {
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  margin: 0 0 25px 0;
+  margin: 0;
 }
 
 .slogan__lead {
@@ -23,10 +51,18 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 32px 29px 30px;
+  margin: 0 32px 0 30px;
 }
 
 .slogan__link {
+  position: relative;
+  top: 245px;
+  z-index: 2;
+  display: block;
+  order: 2;
+  margin: 0 auto;
+
+
   font-size: 14px;
   line-height: 18px;
   color: $basic-white;
@@ -45,15 +81,28 @@
   }
 }
 
-// .slogan__image {
-//   position: absolute;
-//   top: 10px;
-//   left: 0;
-// }
+.slogan__image {
+  position: relative;
+  top: -73px;
+  z-index: 2;
+  display: block;
+  order: 1;
+  width: 280px;
+  height: 270px;
+  margin: 0 auto;
+  margin-bottom: 3px;
+}
 
 @media (min-width: $tablet-width) {
   .slogan {
+    position: relative;
+    z-index: 2;
     padding: 32px 30px 20px 30px;
+  }
+
+  .slogan::before,
+  .slogan::after {
+    display: none;
   }
 
   .slogan__item {
@@ -77,7 +126,20 @@
     margin: 0 337px 49px 88px;
   }
 
+  .slogan__image {
+    top: -86px;
+    order: 2;
+    width: 709px;
+    height: 609px;
+    margin: 0 auto;
+  }
+
   .slogan__link {
+    position: relative;
+    top: -6px;
+    z-index: 3;
+    display: block;
+    order: 2;
     font-size: 20px;
     line-height: 20px;
     margin: 0 376px 0 82px;
@@ -90,7 +152,39 @@
     padding: 60px 20px 20px 20px;
   }
 
+  .slogan::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: -177px;
+    left: 488px;
+    width: 1043px;
+    height: 696px;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/index-background-mobile@2x.jpg");
+    //   background-size: 640px auto;
+    // }
+  }
+
+  .slogan::after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: -177px;
+    left: 649px;
+    width: 720px;
+    height: 696px;
+    background-color: $basic-green-light;
+  }
+
   .slogan__item {
+    z-index: 1;
     background-color: $basic-white;
   }
 
@@ -99,6 +193,17 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0 730px 41px 80px;
+    padding-top: 50px;
+  }
+
+  .slogan__image {
+    top: -378px;
+    left: 115px;
+    z-index: 3;
+    order: 2;
+    width: 552px;
+    height: 489px;
+    margin: 0 auto;
   }
 
   .slogan__lead {
@@ -110,6 +215,7 @@
   }
 
   .slogan__link {
+    width: 200px;
     margin: 0 0 0 82px;
   }
 }

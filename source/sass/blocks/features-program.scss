@@ -94,15 +94,96 @@
   .features-program__title {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 32px 0;
   }
 
   .features-program__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 72px 0 0;
   }
 
   .features-program__item {
-    margin: 0 182px 30px 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 37px 0;
+    padding: 151px 0 57px 0;
+    width: 230px;
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 1px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &--material {
+      background-image: url("../img/features-background-1.svg");
+      background-repeat: no-repeat;
+      background-position: 130px 40px;
+    }
+
+    &--form {
+      background-image: url("../img/features-background-2.svg");
+      background-repeat: no-repeat;
+      background-position: 118px 40px;
+    }
+
+    &--replacement {
+      background-image: url("../img/features-background-3.svg");
+      background-repeat: no-repeat;
+      background-position: 119px 40px;
+    }
+
+    &--changes {
+      background-image: url("../img/features-background-4.svg");
+      background-repeat: no-repeat;
+      background-position: 112px 40px;
+    }
+  }
+
+  .features-program__item--material::after {
+    position: absolute;
+    content: "";
+    top: 66px;
+    left: 29px;
+    width: 30px;
+    height: 32px;
+  }
+
+  .features-program__item--form::after {
+    position: absolute;
+    content: "";
+    top: 66px;
+    left: 27px;
+    width: 30px;
+    height: 32px;
+  }
+
+  .features-program__item--replacement::after {
+    position: absolute;
+    content: "";
+    top: 66px;
+    left: 28px;
+    width: 30px;
+    height: 32px;
+  }
+
+  .features-program__item--changes::after {
+    position: absolute;
+    content: "";
+    top: 66px;
+    left: 26px;
+    width: 30px;
+    height: 32px;
   }
 }
 
@@ -114,24 +195,29 @@
   .features-program__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 200px 69px 0;
+    margin: 0 0 32px 0;
   }
 
   .features-program__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 40px;
     padding: 0;
+    margin: 0;
   }
 
   .features-program__item {
     font-size: 16px;
     line-height: 24px;
-    padding: 0;
     margin: 0;
+    padding: 151px 0 57px 0;
+    width: 248px;
 
-    &:nth-child(4) {
-      margin: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 1px;
     }
   }
 }
