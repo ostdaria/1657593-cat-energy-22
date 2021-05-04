@@ -16,7 +16,7 @@
         <div class="page-header__holder">
           <a class="page-header__logo">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="page-header__logo-image" src="img/logo-mobile.svg"  alt="Логотип сайта «Кэт энерджи»">
             </picture>
@@ -58,7 +58,7 @@
         <a class="slogan__link" href="form.html">Подобрать программу</a>
 
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/image-food-index-desktop.png 1x, img/image-food-index-desktop@2x.png 2x">
+          <source media="(min-width: 1440px)" srcset="img/image-food-index-desktop.png 1x, img/image-food-index-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/image-food-index-tablet.png 1x, img/image-food-index-tablet@2x.png 2x">
           <img class="slogan__image" src="img/image-food-index-mobile.png" srcset="img/image-food-index-mobile@2x.png" alt="Товар функционального питания «Кэт энерджи»">
         </picture>
@@ -95,23 +95,36 @@
       <div class="result-using">
         <div class="result-using__container container">
           <div class="result-using__holder">
-            <h2 class="result-using__title">Живой пример</h2>
-            <p class="result-using__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="result-using__title-wrapper">
+              <h2 class="result-using__title">Живой пример</h2>
+            </div>
+            <div class="stats">
+              <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-            <div class="result-using__description">
-              <div class="result-using__image">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/icon-weight-loss-tablet.svg">
-                  <img src="img/icon-weight-loss-mobile.svg" alt="">
-                </picture>
+              <div class="stats__wrapper">
+                <dl class="stats__list">
+                  <div class="stats__item">
+                    <dt class="stats__amount">
+                      5 кг
+                    </dt>
+                    <dd class="stats__amount-description">
+                      снижение веса
+                    </dd>
+                  </div>
+
+                  <div class="stats__item">
+                    <dt class="stats__amount">
+                      60 дней
+                    </dt>
+
+                    <dd class="stats__amount-description">
+                      затрачено времени
+                    </dd>
+                  </div>
+                </dl>
+
+                <p class="stats__about-price"><span>Затраты на питание:</span> 15 000 руб.</p>
               </div>
-              <div class="result-using__image">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/icon-time-spent-tablet.svg">
-                  <img src="img/icon-time-spent-mobile.svg" alt="">
-                </picture>
-              </div>
-              <p class="result-using__about-price"><span>Затраты на питание:</span> 15 000 руб.</p>
             </div>
           </div>
 
@@ -119,7 +132,7 @@
             <ul class="result-using__list">
               <li class="result-using__item">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/cat-before-desktop.png 1x, img/cat-before-desktop@2x.png 2x">
+                  <source media="(min-width: 1440px)" srcset="img/cat-before-desktop.png 1x, img/cat-before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
                   <img class="result-using__slider__image-before" srcset="img/cat-before-mobile.png 1x, img/cat-before-mobile@2x.png 2x" alt="Кот до использования программы функционального питания">
                 </picture>
@@ -127,7 +140,7 @@
 
               <li class="result-using__item">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/cat-after-desktop.png 1x, img/cat-after-desktop@2x.png 2x">
+                  <source media="(min-width: 1440px)" srcset="img/cat-after-desktop.png 1x, img/cat-after-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
                   <img class="result-using__slider__image-after" srcset="img/cat-after-mobile.png 1x, img/cat-after-mobile@2x.png 2x" alt="Кот после использования программы функционального питания">
                 </picture>
@@ -138,9 +151,9 @@
               <button class="result-using__button-slider" type="button">Было</button>
               <div class="result-using__range-controls">
                 <div class="result-using__scale">
-                  <div class="result-using__bar" style="width: 100%;"></div>
+                  <div class="result-using__bar"></div>
                 </div>
-                <div class="result-using__toggle" tabindex="0" style="left: 50%;"></div>
+                <div class="result-using__toggle" tabindex="0" aria-label="Маркер переключения фотографий кота"></div>
               </div>
               <button class="result-using__button-slider" type="button">Стало</button>
             </div>

@@ -12,25 +12,6 @@
   margin: 0 0 33px 0;
 }
 
-.result-using__text {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 18px;
-  color: $special-dark-grey;
-  margin: 0 0 25px 0;
-}
-
-.result-using__description {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.result-using__about-price {
-  text-transform: uppercase;
-  text-align: center;
-  margin: 15px 20px 0 50px;
-}
-
 .result-using__button-slider {
   font-family: "Oswald", Arial, sans-serif;
   font-size: 16px;
@@ -74,7 +55,7 @@
 .result-using__toggle {
   position: absolute;
   top: 9px;
-  transform: translateX(-38px);
+  transform: translateX(15px);
   width: 35px;
   height: 6px;
   background-color: $basic-green;
@@ -90,38 +71,13 @@
   }
 
   .result-using__holder {
-    margin: 0 0 59px 0;
+    margin: 0 0 0 0;
   }
 
   .result-using__title {
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 63px 0;
-  }
-
-  .result-using__text {
-    font-size: 16px;
-    line-height: 24px;
-    color: $basic-black;
-    margin: 0 26px 54px 0;
-  }
-
-  .result-using__image {
-    padding: 0;
-  }
-
-  .result-using__description {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 0 59px 0;
-  }
-
-  .result-using__about-price {
-    font-size: 20px;
-    line-height: 20px;
-    text-align: right;
-    padding: 0;
-    margin: 10px 20px 0 30px;
   }
 
   .result-using__slider {
@@ -172,14 +128,14 @@
   .result-using__toggle {
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 50%;
     width: 10px;
     height: 10px;
     border: 12px solid $basic-white;
     background-color: $basic-green;
     box-shadow: 0 2px 0 0 $special-grey;
     border-radius: 50%;
-    transform: translateX(-10px);
+    transform: translateX(0);
   }
 }
 
@@ -199,43 +155,6 @@
     grid-template-columns: 1fr 1fr;
     background-color: $basic-grey;
     padding: 20px 0 20px 0;
-  }
-
-  .result-using__text {
-    font-size: 16px;
-    line-height: 24px;
-    color: $basic-black;
-    margin: 0 134px 69px 0;
-  }
-
-  .result-using__description {
-    display: flex;
-    justify-content: start;
-    margin: 0 134px 0 0;
-  }
-
-  .result-using__image {
-    &:nth-child(1) {
-      margin-right: 24px;
-    }
-
-    &:nth-child(2) {
-      margin-left: 24px;
-    }
-
-    margin-bottom: 60px;
-  }
-
-  .result-using__about-price {
-    font-size: 20px;
-    line-height: 20px;
-    text-align: right;
-    padding: 0;
-    margin: 0;
-  }
-
-  .result-using__about-price span {
-    margin-right: 60px;
   }
 
   .result-using__slider {
