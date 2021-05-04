@@ -81,7 +81,13 @@
   }
 
   .result-using__slider {
+    // width: auto;
     background-color: $basic-grey-light;
+  }
+
+  .result-using__slider-holder {
+  //   width: auto;
+    // background-color: $basic-grey-light;
   }
 
   .result-using__list {
@@ -137,6 +143,8 @@
     border-radius: 50%;
     transform: translateX(0);
   }
+
+
 }
 
 @media (min-width: $desktop-width) {

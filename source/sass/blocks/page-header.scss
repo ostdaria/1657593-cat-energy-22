@@ -37,5 +37,39 @@
   .page-header__logo {
     padding: 0;
   }
+
+  .page-header--preview::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    min-height: 696px;
+    top: 0;
+    right: 0;
+    left: inherit;
+    z-index: 2;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .page-header--preview::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    min-height: 696px;
+    top: 0;
+    right: 0;
+    left: inherit;
+    z-index: 2;
+    background-color: $basic-green-light;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
 }
 

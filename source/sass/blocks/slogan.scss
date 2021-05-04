@@ -8,11 +8,13 @@
   position: absolute;
   top: 10px;
   left: 0;
-  min-width: 320px;
+  // min-width: 320px;
+  width: 100%;
   height: 302px;
   background-image: url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 
   // @media (min-resolution: 2dppx) {
   //   background-image: url("../img/index-background-mobile@2x.jpg");
@@ -26,6 +28,7 @@
   top: 10px;
   left: 0;
   min-width: 320px;
+  width: 100%;
   height: 302px;
   background-color: $basic-green-light;
 }
@@ -98,11 +101,11 @@
     position: relative;
     z-index: 2;
     padding: 32px 30px 20px 30px;
-  }
 
-  .slogan::before,
-  .slogan::after {
-    display: none;
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .slogan__item {
@@ -150,37 +153,6 @@
 @media (min-width: $desktop-width) {
   .slogan {
     padding: 60px 20px 20px 20px;
-  }
-
-  .slogan::before {
-    content: "";
-    position: absolute;
-    display: block;
-    z-index: 2;
-    top: -177px;
-    left: 488px;
-    width: 1043px;
-    height: 696px;
-    background-image: url("../img/index-background-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("../img/index-background-mobile@2x.jpg");
-    //   background-size: 640px auto;
-    // }
-  }
-
-  .slogan::after {
-    content: "";
-    position: absolute;
-    display: block;
-    z-index: 2;
-    top: -177px;
-    left: 649px;
-    width: 720px;
-    height: 696px;
-    background-color: $basic-green-light;
   }
 
   .slogan__item {

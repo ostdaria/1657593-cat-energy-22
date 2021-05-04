@@ -69,6 +69,7 @@
   right: 70px;
   z-index: 10;
   min-height: 80vh;
+  width: 100%;
 }
 
 .main-nav__list {
@@ -83,8 +84,8 @@
   position: relative;
   display: block;
   border-top: 1px solid $basic-grey-silver;
-  padding-top: 20px;
-  margin-bottom: 20px;
+  padding: 25px 0;
+  // margin-bottom: 20px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -100,9 +101,9 @@
 
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
-    top: 50px;
+    top: 74px;
     right: 0;
-    left: 20px;
+    left: 0;
     min-height: 20vh;
     background-color: $basic-white;
     text-align: center;
