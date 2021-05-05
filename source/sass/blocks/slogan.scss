@@ -156,6 +156,7 @@
   }
 
   .slogan__item {
+    max-width: 600px;
     z-index: 1;
     background-color: $basic-white;
   }
@@ -164,7 +165,8 @@
     color: $basic-black;
     font-size: 60px;
     line-height: 60px;
-    margin: 0 730px 41px 80px;
+    // margin: 0 730px 41px 80px;
+    margin: 0 0 41px 80px;
     padding-top: 50px;
   }
 
