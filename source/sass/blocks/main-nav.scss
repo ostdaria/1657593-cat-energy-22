@@ -88,6 +88,7 @@
   // margin-bottom: 20px;
 }
 
+
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .main-nav__item {
     display: none;
@@ -133,8 +134,6 @@
   }
 
   .main-nav__item--active .main-nav__link {
-    padding-right: 21px;
-    padding-left: 21px;
     text-align: center;
   }
 }
@@ -168,7 +167,7 @@
   .main-nav__link {
     border: none;
     padding: 0;
-    margin: 15px 0 10px 30px;
+    margin: 15px 0 10px 35px;
 
     &--active {
       position: relative;

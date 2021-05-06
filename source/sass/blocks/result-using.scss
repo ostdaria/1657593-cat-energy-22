@@ -66,13 +66,30 @@
 
 @media (min-width: $tablet-width) {
   .result-using__container {
-    background-color: $basic-white;
     position: relative;
+    background-color: $basic-white;
     padding: 0;
   }
 
   .result-using__holder {
     padding: 0 30px 0 30px;
+  }
+
+  .result-using__slider {
+    position: relative;
+    padding-top: 0;
+    background-color: $basic-grey-light;
+  }
+
+
+  .result-using__slider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    background-color: $basic-grey;
   }
 
   .result-using__wrapper {
@@ -85,23 +102,7 @@
   .result-using__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 63px 0;
-  }
-
-  .result-using__slider {
-    position: relative;
-    padding-top: 0;
-    background-color: $basic-grey-light;
-  }
-
-  .result-using__slider::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 50%;
-    background-color: $basic-grey;
+    margin: 43px 0 63px 0;
   }
 
   .result-using__slider__image-before {

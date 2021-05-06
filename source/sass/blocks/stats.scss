@@ -147,8 +147,10 @@
     line-height: 20px;
     padding: 0;
     margin: 0;
-    width: 327px;
+    // width: 327px;
     display: flex;
-    justify-content: space-between;
+    max-width: none;
+    gap: 70px;
+    // justify-content: space-between;
   }
 }
