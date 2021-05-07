@@ -8,8 +8,8 @@
 }
 
 .contacts__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__title {
@@ -19,6 +19,7 @@
   color: $basic-grey-dark;
   text-transform: uppercase;
   margin: 0;
+  max-width: 140px;
 }
 
 .contacts__text {
@@ -27,6 +28,7 @@
   line-height: 20px;
   color: $special-dark-grey;
   margin: 0;
+  max-width: 140px;
 }
 
 .contacts-holder {
@@ -46,12 +48,14 @@
   .contacts__title {
     font-size: 20px;
     line-height: 22px;
+    max-width: 170px;
   }
 
   .contacts__text {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    max-width: 160px;
   }
 
   .contacts__text span {

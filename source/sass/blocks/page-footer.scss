@@ -4,12 +4,19 @@
   padding: 39px 20px 22px 19px;
 }
 
+.page-footer__inner {
+  width: auto;
+}
+
 
 @media (min-width: $tablet-width) {
   .page-footer__container {
     display: grid;
+    max-width: 708px;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 125px;
     padding: 55px 30px 35px 30px;
+    // padding: 55px 0 35px 0;
   }
 }
 

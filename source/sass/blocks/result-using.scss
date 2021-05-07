@@ -28,6 +28,11 @@
   margin: 0;
 }
 
+.result-using__item {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
 .result-using__slider__image-before {
   margin-top: 42px;
 }
@@ -40,7 +45,8 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 23px 45px 25px 47px;
+  max-width: 195px;
+  margin: 25px auto;
 }
 
 .result-using__scale {

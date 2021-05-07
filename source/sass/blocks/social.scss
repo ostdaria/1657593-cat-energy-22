@@ -34,8 +34,9 @@
   .social {
     padding: 0;
     border-bottom: none;
-    margin-left: 65px;
-    margin-right: 45px;
+    margin: 0;
+    // margin-left: 65px;
+    // margin-right: 45px;
 
     &::after {
       display: none;
