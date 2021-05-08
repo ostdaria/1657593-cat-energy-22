@@ -1,5 +1,4 @@
 .map {
-  // width: $content-mobile;
   width: auto;
   height: 362px;
   background-color: $special-grey;
@@ -23,7 +22,6 @@
     background-image: url("/../img/map-tablet.png");
     margin: 0;
     width: auto;
-    // width: $content-tablet;
   }
 
   .map__iframe {

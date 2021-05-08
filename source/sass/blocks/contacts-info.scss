@@ -1,7 +1,7 @@
 .contacts-info {
   border: none;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 0 0;
 }
 
 .contacts-info__title {
@@ -9,7 +9,7 @@
   line-height: 26px;
   color: $basic-black;
   margin: 0 90px 30px 0;
-  padding: 0;
+  padding: 20px 0 0 0;
 }
 
 .contacts-info__list {
@@ -19,6 +19,7 @@
 }
 
 .contacts-info__item {
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   color: $special-dark-grey;
@@ -27,7 +28,7 @@
 
   &:nth-child(1) .contacts-info__input {
     width: 219px;
-    margin: 0 0 14px 11px;
+    margin: 0 0 14px 10px;
   }
 
   &:nth-child(2) .contacts-info__input {
@@ -62,11 +63,60 @@
   &:focus {
     border: 1px solid $special-dark-grey;
   }
+
+  &:invalid {
+    border: 2px solid $status_error;
+  }
+
+  &:focus + .contacts-info__icon--email line,
+  &:focus + .contacts-info__icon--email path {
+    stroke: $basic-green;
+  }
+
+  &:focus + .contacts-info__icon--phone path {
+    fill: $basic-green;
+  }
+
+  &:invalid + .contacts-info__icon--email line,
+  &:invalid + .contacts-info__icon--email path {
+    stroke: $status_error;
+  }
+
+  &:invalid + .contacts-info__icon--phone path {
+    fill: $status_error;
+  }
+
+}
+
+.contacts-info__icon {
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: $basic-white;
+
+  &--email {
+    top: 13px;
+    right: 36px;
+    width: 20px;
+    height: 15px;
+  }
+
+  &--phone {
+    top: 9px;
+    right: 36px;
+    width: 20px;
+    height: 21px;
+  }
+
+  // &:hover path {
+  //   fill: ;
+  // }
 }
 
 @media (min-width: $tablet-width) {
   .contacts-info {
     margin: 0 0 65px 0;
+    padding: 0;
     font-size: 20px;
     line-height: 30px;
   }

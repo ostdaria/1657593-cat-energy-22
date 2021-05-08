@@ -1,31 +1,22 @@
 .social {
   position: relative;
   list-style: none;
-  // border-bottom: 1px solid $basic-grey-neutral;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 0;
-  margin: 0 60px 21px 80px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 40px;
-    left: -80px;
-    width: 280px;
-    height: 1px;
-    background-color: $basic-grey-neutral;
-  }
+  border-bottom: 1px solid $basic-grey-neutral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  margin: 0;
+  padding: 20px 0 21px 0;
+  text-align: center;
 }
 
 .social__link {
   &:hover path {
-    // fill: $basic-green;
     stroke: $basic-green;
   }
 
   &:active path {
-    // fill: $basic-green-opacity;
     stroke: $basic-green-opacity;
   }
 }
@@ -35,6 +26,8 @@
     padding: 0;
     border-bottom: none;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     // margin-left: 65px;
     // margin-right: 45px;
 

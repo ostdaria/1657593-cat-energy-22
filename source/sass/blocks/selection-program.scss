@@ -1,5 +1,6 @@
 .selection-program {
   padding: 27px 20px 20px 20px;
+  border-top: 1px solid $basic-grey-neutral;
 }
 
 .selection-program__title {
@@ -12,7 +13,8 @@
 
 @media (min-width: $tablet-width) {
   .selection-program {
-    padding: 50px 67px 20px 69px;
+    padding: 50px 67px 72px 69px;
+    border-top: none;
   }
 
   .selection-program__title {

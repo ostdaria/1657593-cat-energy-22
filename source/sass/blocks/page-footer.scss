@@ -1,12 +1,20 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
 .page-footer__container {
   display: flex;
   flex-direction: column;
-  padding: 39px 20px 22px 19px;
+  padding: 0 20px 0 19px;
 }
 
 .page-footer__inner {
   width: auto;
 }
+
+// .page-footer__holder--color {
+//   background-color: $basic-grey;
+// }
 
 
 @media (min-width: $tablet-width) {
