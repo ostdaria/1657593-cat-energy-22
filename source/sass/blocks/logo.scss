@@ -4,6 +4,7 @@
   margin: 0;
   text-align: center;
   padding: 39px 0 32px 0;
+  display: block;
 
   &:hover path {
     fill: $special-black-opacity;
@@ -12,6 +13,10 @@
   &:active path {
     fill: $special-dark-grey-opacity;
   }
+}
+
+.logo__link {
+  
 }
 
 @media (min-width: $tablet-width) {

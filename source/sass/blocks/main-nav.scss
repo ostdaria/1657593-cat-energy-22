@@ -211,9 +211,18 @@
     z-index: 3;
     font-size: 20px;
     line-height: 29px;
-  }
 
-  .main-nav__link {
+    &:nth-child(1) .main-nav__link {
+      margin: 17px 17px 10px 17px;
+    }
+
+    &:nth-child(2) .main-nav__link {
+      margin: 17px 10px 10px 10px;
+    }
+
+    &:nth-child(3) .main-nav__link {
+      margin: 17px 0 10px 10px;
+    }
   }
 
   .main-nav__link--index {

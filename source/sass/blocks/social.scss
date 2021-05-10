@@ -28,12 +28,25 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    // margin-left: 65px;
-    // margin-right: 45px;
 
     &::after {
       display: none;
     }
+  }
+
+  .social__link--vkontakte svg {
+    width: 29px;
+    height: 17px;
+  }
+
+  .social__link--instagram svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link--facebook svg {
+    width: 25px;
+    height: 28px;
   }
 }
 
@@ -42,8 +55,6 @@
     padding: 0;
     border-bottom: none;
     margin: 0;
-    // margin-left: 110px;
-    // margin-right: 110px;
   }
 }
 

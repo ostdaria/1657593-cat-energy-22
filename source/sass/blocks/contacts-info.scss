@@ -5,11 +5,24 @@
 }
 
 .contacts-info__title {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
   margin: 0 90px 30px 0;
-  padding: 20px 0 0 0;
+  padding: 20px 14px 0 0;
+  background-color: $basic-white;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 2px;
+    background: $basic-green;
+    z-index: -1;
+  }
 }
 
 .contacts-info__list {
@@ -122,10 +135,33 @@
   }
 
   .contacts-info__title {
+    position: relative;
     font-size: 36px;
     line-height: 36px;
-    padding: 0;
+    padding: 0 20px 0 0;
     margin: 0 100px 56px 0;
+    background-color: $basic-white;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 108%;
+      height: 2px;
+      width: 100vw;
+      background-color: $basic-green;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      width: 100vw;
+      height: 2px;
+      background: $basic-green;
+      z-index: -1;
+    }
   }
 
   .contacts-info__list {
@@ -166,17 +202,19 @@
 
   .contacts-info__list {
     display: flex;
+    gap: 64px;
+  }
+
+  .contacts-info__title {
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px 0 0;
+    margin: 0 100px 56px 0;
+    background-color: $basic-white;
   }
 
   .contacts-info__item {
-    &:nth-child(1) {
-      margin-right: 60px;
-    }
-
-    &:nth-child(2) {
-      margin-left: 60px;
-    }
-
     &:nth-child(1) .contacts-info__input {
       width: 486px;
       padding: 15px 20px 10px 20px;

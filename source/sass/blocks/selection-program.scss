@@ -13,14 +13,15 @@
 
 @media (min-width: $tablet-width) {
   .selection-program {
-    padding: 50px 67px 72px 69px;
+    padding: 0 45px 72px 39px;
+    // padding: 50px 30px 72px 30px;
     border-top: none;
   }
 
   .selection-program__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 54px 0;
+    margin: 0 0 51px 0;
     padding: 0;
   }
 }
@@ -31,7 +32,7 @@
   }
 
   .selection-program {
-    padding: 43px 0 20px 0;
+    padding: 37px 0 82px 0;
   }
 
   .selection-program__title {

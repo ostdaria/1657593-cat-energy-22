@@ -5,11 +5,12 @@
   margin: 0 auto;
 }
 
+
 @media (min-width: $tablet-width) {
   .container {
     width: 768px;
     margin: 0 auto;
-    // padding: 0 20px;
+    padding: 0 30px;
   }
 }
 

@@ -9,7 +9,7 @@
 .selection__item {
   font-size: 16px;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .selection__item label {
@@ -108,15 +108,15 @@
   }
 
   .selection__item label {
-    margin: 0 0 0 65px;
+    margin: 2px 0 0 58px;
   }
 
   .selection__input + label::before {
     content: "";
     position: absolute;
-    top: -6px;
-    left: -65px;
-    width: 37px;
+    top: -4px;
+    left: -59px;
+    width: 38px;
     height: 38px;
     border-radius: 50px;
     border: 1px solid $special-grey;
@@ -125,8 +125,8 @@
   .selection__input:checked + label::after {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -54px;
+    top: 7px;
+    left: -48px;
     width: 18px;
     height: 18px;
     border-radius: 50px;
@@ -136,9 +136,9 @@
   .selection__input:disabled + label::before {
     content: "";
     position: absolute;
-    top: -6px;
-    left: -65px;
-    width: 37px;
+    top: -4px;
+    left: -59px;
+    width: 38px;
     height: 38px;
     border-radius: 50px;
     border: 1px solid $basic-grey-1-opacity;
@@ -147,9 +147,9 @@
   .selection__input:checked:disabled + label::before {
     content: "";
     position: absolute;
-    top: -6px;
-    left: -65px;
-    width: 37px;
+    top: -4px;
+    left: -59px;
+    width: 38px;
     height: 38px;
     border-radius: 50px;
     border: 1px solid $basic-grey-1-opacity;
@@ -158,8 +158,8 @@
   .selection__input:checked:disabled + label::after {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -54px;
+    top: 7px;
+    left: -48px;
     width: 18px;
     height: 18px;
     border-radius: 50px;
@@ -172,8 +172,8 @@
   .selection {
     font-size: 20px;
     line-height: 30px;
-    padding: 25px 244px 25px 28px;
-    margin: 0;
+    padding: 26px 251px 30px 28px;
+    margin: -6px 0 0 0;
   }
 
   .selection__item:nth-child(3) {
