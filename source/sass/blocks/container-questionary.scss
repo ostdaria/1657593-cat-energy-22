@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.container-questionary-selection {
+.container-questionary__selection {
   border-top: 1px solid $basic-grey-neutral;
   border-bottom: 1px solid $basic-grey-neutral;
 }
@@ -13,7 +13,7 @@
     margin: 0 0 75px 0;
   }
 
-  .container-questionary-selection {
+  .container-questionary__selection {
     border: none;
   }
 }

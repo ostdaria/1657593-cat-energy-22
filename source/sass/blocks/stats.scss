@@ -10,7 +10,6 @@
 
 .stats__list {
   display: flex;
-  // gap: 20px;
   justify-content: space-between;
   align-items: center;
   margin: 0;
@@ -20,7 +19,6 @@
 
 .stats__item {
   width: 124px;
-  // width: 100%;
   padding: 15px 0 5px 0;
   text-align: center;
   border: 1px solid $special-grey;
@@ -91,7 +89,6 @@
     max-width: 142px;
     padding: 0;
     margin-bottom: -25px;
-
     background: $basic-white;
   }
 
@@ -121,15 +118,11 @@
   .stats__text {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 182px 69px 0;
+    margin: 137px 148px 69px 0;
   }
 
   .stats__wrapper {
     display: grid;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-    // flex-direction: column;
-    // align-items: flex-start;
     gap: 50px;
     margin: 0;
   }
@@ -147,10 +140,8 @@
     line-height: 20px;
     padding: 0;
     margin: 0;
-    // width: 327px;
     display: flex;
     max-width: none;
     gap: 70px;
-    // justify-content: space-between;
   }
 }

@@ -3,13 +3,17 @@
   color: $special-dark-grey-2;
   list-style: none;
   margin: 0 0 0 0;
-  padding: 25px 0 10px 0;
+  padding: 29px 0 23px 0;
 }
 
 .selection__item {
   font-size: 16px;
   line-height: 18px;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
+}
+
+.selection__item:last-child {
+  margin-bottom: 0;
 }
 
 .selection__item label {
@@ -17,13 +21,13 @@
   display: block;
   cursor: pointer;
   user-select: none;
-  margin: 0 0 0 45px;
+  margin: 0 0 0 43px;
 }
 
 .selection__input + label::before {
   content: "";
   position: absolute;
-  top: -6px;
+  top: -7px;
   left: -45px;
   width: 28px;
   height: 28px;
@@ -38,8 +42,8 @@
 .selection__input:checked + label::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: -36px;
+  top: 2px;
+  left: -37px;
   width: 13px;
   height: 13px;
   border-radius: 50px;
@@ -49,7 +53,7 @@
 .selection__input:disabled + label::before {
   content: "";
   position: absolute;
-  top: -6px;
+  top: -7px;
   left: -45px;
   width: 28px;
   height: 28px;
@@ -61,7 +65,7 @@
 .selection__input:checked:disabled + label::before {
   content: "";
   position: absolute;
-  top: -6px;
+  top: -7px;
   left: -45px;
   width: 28px;
   height: 28px;
@@ -72,8 +76,8 @@
 .selection__input:checked:disabled + label::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: -36px;
+  top: 2px;
+  left: -37px;
   width: 13px;
   height: 13px;
   border-radius: 50px;

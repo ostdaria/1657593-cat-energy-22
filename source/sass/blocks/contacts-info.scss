@@ -9,8 +9,8 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
-  margin: 0 90px 30px 0;
-  padding: 20px 14px 0 0;
+  margin: 0 90px 36px 0;
+  padding: 25px 14px 0 0;
   background-color: $basic-white;
   display: inline-block;
 
@@ -108,14 +108,14 @@
   background-color: $basic-white;
 
   &--email {
-    top: 13px;
+    top: 15px;
     right: 36px;
     width: 20px;
     height: 15px;
   }
 
   &--phone {
-    top: 9px;
+    top: 11px;
     right: 36px;
     width: 20px;
     height: 21px;
@@ -193,7 +193,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts-info {
-    margin: 0 0 65px 0;
+    margin: 0 0 53px 0;
   }
 
   .container-questionary {
@@ -202,7 +202,7 @@
 
   .contacts-info__list {
     display: flex;
-    gap: 64px;
+    gap: 58px;
   }
 
   .contacts-info__title {
@@ -210,26 +210,34 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px 0 0;
-    margin: 0 100px 56px 0;
+    margin: 0 100px 76px 0;
     background-color: $basic-white;
   }
 
   .contacts-info__item {
     &:nth-child(1) .contacts-info__input {
       width: 486px;
-      padding: 15px 20px 10px 20px;
+      padding: 16px 20px 10px 20px;
+      margin: 0 0 14px 22px;
     }
 
     &:nth-child(2) .contacts-info__input {
       width: 472px;
-      padding: 15px 20px 10px 20px;
+      padding: 16px 20px 10px 16px;
+      margin: 0 0 14px 17px;
     }
   }
 
   .contacts-info__input {
+    min-height: 52px;
+
     &::placeholder {
       font-size: 20px;
       line-height: 30px;
     }
+  }
+
+  .contacts-info__item label {
+    margin-top: 12px;
   }
 }

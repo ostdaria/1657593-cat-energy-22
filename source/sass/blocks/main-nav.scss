@@ -14,14 +14,14 @@
   cursor: pointer;
   border: none;
   background-color: $basic-white;
-  margin: 10px 0 0 0;
+  margin: 9px 0 0 0;
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
   top: 15px;
-  left: 17px;
+  left: 16px;
   width: 24px;
   height: 2px;
   background-color: $basic-black;

@@ -145,6 +145,14 @@
     font-size: 20px;
     background: none;
     border-bottom: 1px dotted $basic-grey-neutral;
+
+    &:hover {
+      border-bottom: 1px solid $basic-black;
+    }
+
+    &:active {
+      border-bottom-color: transparent;
+    }
   }
 
   .result-using__scale {
@@ -158,14 +166,37 @@
   .result-using__toggle {
     position: absolute;
     top: 0;
-    left: 50%;
-    width: 10px;
-    height: 10px;
-    border: 12px solid $basic-white;
-    background-color: $basic-green;
-    box-shadow: 0 2px 0 0 $special-grey;
+    left: 142%;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $special-grey;
+    background: $basic-white;
+    box-shadow: 0 2px 3px 1px $special-light-black-opacity;
     border-radius: 50%;
     transform: translateX(0);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      margin: auto;
+      border-radius: 50%;
+      background-color: $basic-green;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 3px 2px $special-light-black-opacity;
+    }
+
+    &:active {
+      border: 1px solid $basic-green;
+    }
   }
 }
 
@@ -173,23 +204,62 @@
   .result-using__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 76px 0;
+    margin: 50px 0 76px 0;
   }
 
   .result-using {
-    background-color: $basic-grey;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 72%;
+      width: 100%;
+      background: linear-gradient(to right, $basic-grey 71.8%, $basic-grey-light 28.2%);
+      z-index: -1;
+    }
+  }
+
+  .result-using__wrapper {
+    position: relative;
+    right: 70px;
+    margin: 150px 0 0 0;
+  }
+
+  .result-using__list {
+    margin: 0 auto;
   }
 
   .result-using__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: $basic-grey;
     padding: 20px 0 20px 0;
+    background: none;
   }
 
   .result-using__slider {
     min-height: 400px;
-    background-color: $basic-grey;
+    background: none;
+
+    &::before {
+      contain: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 50%;
+      background: none;
+    }
+  }
+
+  .result-using__slider__image-before {
+    top: -163px;
+    left: 19px;
+    margin: 0;
+    display: flex;
   }
 }
 

@@ -12,6 +12,9 @@
 }
 
 .social__link {
+  display: block;
+  fill: $special-grey-3;
+
   &:hover path {
     stroke: $basic-green;
   }

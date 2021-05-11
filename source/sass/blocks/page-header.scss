@@ -4,11 +4,19 @@
 }
 
 .page-header__holder {
-  padding: 12px 0;
+  padding: 12px 0 11px 0;
 }
 
 .page-header__logo-image {
   margin: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo-image-text {

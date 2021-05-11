@@ -55,7 +55,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 20px;
+      top: 22px;
       width: 100vw;
       height: 2px;
       background: $basic-green;
@@ -67,7 +67,7 @@
     font-size: 20px;
     line-height: 30px;
     width: 600px;
-    height: 174px;
+    height: 163px;
     text-align: left;
     margin: 0 0 65px 0;
     padding: 10px 10px 0 19px;
@@ -78,7 +78,7 @@
   .comments__textarea {
     width: 1189px;
     text-align: left;
-    margin: 0 0 65px 0;
-    padding: 10px 10px 0 19px;
+    margin: 0 0 62px 0;
+    padding: 9px 10px 0 19px;
   }
 }

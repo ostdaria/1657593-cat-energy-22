@@ -29,20 +29,23 @@
   &:hover + .copyright__icon path {
     fill: $basic-green;
   }
+
+  &:active + .copyright__icon path {
+    fill: $basic-green-opacity;
+  }
 }
 
+.copyright__icon {
+  text-align: right;
 
-// .copyright__icon {
-//   text-align: right;
+  &:hover path {
+    fill: $basic-green;
+  }
 
-//   &:hover path {
-//     fill: $basic-green;
-//   }
-
-//   &:active path {
-//     fill: $basic-green-opacity;
-//   }
-// }
+  &:active path {
+    fill: $basic-green-opacity;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .copyright {
