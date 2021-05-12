@@ -137,6 +137,8 @@
   }
 
   .additional-goods__quantity {
+    font-size: 16px;
+    line-height: 20px;
     margin: 0;
   }
 
@@ -176,7 +178,7 @@
   .additional-goods__item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
+    align-items: baseline;
     padding: 15px 0 17px 0;
     border: none;
     border-top: 1px solid $special-grey;
