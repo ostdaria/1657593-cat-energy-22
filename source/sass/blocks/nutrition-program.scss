@@ -1,11 +1,11 @@
 .nutrition-program {
+  position: relative;
   font-size: 24px;
   line-height: 37px;
 }
 
 .nutrition-program__list {
   list-style: none;
-  // padding: 10px 20px 20px 20px;
   padding: 0 20px 20px 20px;
   margin: 0;
 }
@@ -90,8 +90,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .nutrition-program {
+    padding: 0 0 20px 0;
+  }
+
   .nutrition-program__list {
-    padding: 30px;
+    padding: 0;
   }
 
   .nutrition-program__item {
@@ -160,7 +164,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 80px;
-    padding: 82px 0 71px 0;
+    padding: 255px 0 71px 0;
   }
 
   .nutrition-program__item {

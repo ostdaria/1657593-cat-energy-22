@@ -144,8 +144,9 @@
     order: 2;
     font-size: 20px;
     line-height: 20px;
-    margin: 0 442px 0 82px;
+    margin: 0 382px 0 82px;
     padding: 14px 26px;
+    text-align: center;
   }
 }
 
@@ -169,8 +170,10 @@
   }
 
   .slogan__image {
-    top: -378px;
-    left: 115px;
+    position: absolute;
+    top: 0;
+    right: 20%;
+    // left: 115px;
     z-index: 3;
     order: 2;
     width: 552px;

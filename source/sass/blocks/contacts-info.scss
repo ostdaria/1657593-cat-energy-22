@@ -202,7 +202,8 @@
 
   .contacts-info__list {
     display: flex;
-    gap: 58px;
+    gap: 30px;
+    justify-content: space-between;
   }
 
   .contacts-info__title {
