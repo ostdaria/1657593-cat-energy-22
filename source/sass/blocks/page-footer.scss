@@ -1,15 +1,30 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
 .page-footer__container {
   display: flex;
   flex-direction: column;
-  padding: 39px 20px 22px 19px;
+  padding: 0 20px 0 19px;
 }
+
+.page-footer__inner {
+  width: auto;
+}
+
+// .page-footer__holder--color {
+//   background-color: $basic-grey;
+// }
 
 
 @media (min-width: $tablet-width) {
   .page-footer__container {
     display: grid;
+    max-width: 708px;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 55px 30px 22px 30px;
+    gap: 125px;
+    padding: 55px 30px 35px 30px;
+    // padding: 55px 0 35px 0;
   }
 }
 

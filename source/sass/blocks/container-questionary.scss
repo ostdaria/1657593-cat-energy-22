@@ -3,14 +3,24 @@
   padding: 0;
 }
 
+.container-questionary__selection {
+  border-top: 1px solid $basic-grey-neutral;
+  border-bottom: 1px solid $basic-grey-neutral;
+}
+
 @media (min-width: $tablet-width) {
   .container-questionary {
     margin: 0 0 75px 0;
+  }
+
+  .container-questionary__selection {
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container-questionary {
     display: flex;
+    margin: 0 0 69px 0;
   }
 }

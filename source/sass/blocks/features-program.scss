@@ -7,7 +7,7 @@
   line-height: 40px;
   font-weight: normal;
   text-align: left;
-  margin: 0 25px 40px 0;
+  margin: 0 25px 38px 0;
 }
 
 .features-program__list {
@@ -16,27 +16,87 @@
 }
 
 .features-program__item {
+  position: relative;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
   list-style: none;
-  margin: 0 0 26px 70px;
+  margin: 0 0 26px 77px;
 
   &:nth-child(4) {
     margin-bottom: 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -76px;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.features-program__item--material::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: -56px;
+  width: 30px;
+  height: 32px;
+  background-image: url("../img/features-1.svg");
+  background-repeat: no-repeat;
+}
+
+.features-program__item--form::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: -59px;
+  width: 30px;
+  height: 32px;
+  background-image: url("../img/features-2.svg");
+  background-repeat: no-repeat;
+}
+
+.features-program__item--replacement::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: -57px;
+  width: 30px;
+  height: 32px;
+  background-image: url("../img/features-3.svg");
+  background-repeat: no-repeat;
+}
+
+.features-program__item--changes::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: -61px;
+  width: 30px;
+  height: 32px;
+  background-image: url("../img/features-4.svg");
+  background-repeat: no-repeat;
 }
 
 
 @media (min-width: $tablet-width) {
   .features-program {
+    margin: 0 auto;
     padding: 15px 30px 47px 30px;
+    border-bottom: 1px solid $basic-grey-silver;
   }
 
   .features-program__title {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 32px 0;
   }
 
   .features-program__list {
@@ -45,36 +105,129 @@
   }
 
   .features-program__item {
-    margin: 0 182px 30px 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 37px 0;
+    padding: 151px 0 57px 0;
+    width: 230px;
+
+    &:nth-child(even) {
+      margin-left: 143px;
+    }
+
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 1px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &--material {
+      background-image: url("../img/features-background-1.svg");
+      background-repeat: no-repeat;
+      background-position: 130px 40px;
+    }
+
+    &--form {
+      background-image: url("../img/features-background-2.svg");
+      background-repeat: no-repeat;
+      background-position: 118px 40px;
+    }
+
+    &--replacement {
+      background-image: url("../img/features-background-3.svg");
+      background-repeat: no-repeat;
+      background-position: 119px 40px;
+    }
+
+    &--changes {
+      background-image: url("../img/features-background-4.svg");
+      background-repeat: no-repeat;
+      background-position: 112px 40px;
+    }
+  }
+
+  .features-program__item--material::after {
+    position: absolute;
+    content: "";
+    top: 66px;
+    left: 29px;
+    width: 30px;
+    height: 32px;
+  }
+
+  .features-program__item--form::after {
+    position: absolute;
+    content: "";
+    top: 66px;
+    left: 27px;
+    width: 30px;
+    height: 32px;
+  }
+
+  .features-program__item--replacement::after {
+    position: absolute;
+    content: "";
+    top: 66px;
+    left: 28px;
+    width: 30px;
+    height: 32px;
+  }
+
+  .features-program__item--changes::after {
+    position: absolute;
+    content: "";
+    top: 66px;
+    left: 26px;
+    width: 30px;
+    height: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features-program {
-    padding: 30px 0 47px 0;
+    padding: 30px 0 0 0;
+    border-bottom: none;
   }
 
   .features-program__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 200px 69px 0;
+    margin: 0 0 32px 0;
   }
 
   .features-program__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 89px;
     padding: 0;
+    margin: 0;
   }
 
   .features-program__item {
     font-size: 16px;
     line-height: 24px;
-    padding: 0;
     margin: 0;
+    padding: 151px 0 57px 0;
+    width: 248px;
 
-    &:nth-child(4) {
-      margin: 0;
+    &:nth-child(even) {
+      margin-left: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 1px;
     }
   }
 }

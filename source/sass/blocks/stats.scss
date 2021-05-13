@@ -1,0 +1,147 @@
+.stats__text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  margin: 0 0 25px 0;
+}
+
+.stats__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.stats__item {
+  width: 124px;
+  padding: 15px 0 5px 0;
+  text-align: center;
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.stats__container {
+  max-width: 105px;
+  margin: 0 auto;
+  margin-bottom: -20px;
+  background: $basic-grey-light;
+}
+
+.stats__amount {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.stats__amount-description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $special-dark-grey;
+  width: 77px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.stats__about-price {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .stats__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 26px 54px 0;
+  }
+
+  .stats__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .stats__list {
+    display: flex;
+    gap: 42px;
+    margin: 0 0 10px 0;
+  }
+
+  .stats__item {
+    width: 162px;
+    padding: 19px 0 19px 0;
+  }
+
+  .stats__container {
+    margin: 0 auto;
+    max-width: 142px;
+    padding: 0;
+    margin-bottom: -25px;
+    background: $basic-white;
+  }
+
+  .stats__amount {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .stats__amount-description {
+    width: 142px;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 6px 0 0 0;
+  }
+
+  .stats__about-price {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    max-width: 174px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 137px 197px 69px 0;
+  }
+
+  .stats__wrapper {
+    display: grid;
+    gap: 50px;
+    margin: 0;
+  }
+
+  .stats__container {
+    background: $basic-grey;
+  }
+
+  .stats__list {
+    display: flex;
+  }
+
+  .stats__about-price {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    max-width: none;
+    gap: 70px;
+  }
+}

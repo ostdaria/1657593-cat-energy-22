@@ -1,5 +1,5 @@
 .map {
-  width: $content-mobile;
+  width: auto;
   height: 362px;
   background-color: $special-grey;
   border: none;
@@ -9,12 +9,23 @@
   margin: 0;
 }
 
+.map__iframe {
+  width: 100%;
+  height: 362px;
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
   .map {
-    width: $content-tablet;
+    overflow: hidden;
     height: 400px;
     background-image: url("/../img/map-tablet.png");
     margin: 0;
+    width: auto;
+  }
+
+  .map__iframe {
+    height: 400px;
   }
 }
 
