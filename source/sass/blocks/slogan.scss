@@ -1,6 +1,7 @@
 .slogan {
   position: relative;
-  padding: 10px 20px;
+  padding: 10px 20px 0 20px;
+  background-size: 100% 306px;
 }
 
 .slogan::before {
@@ -45,7 +46,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  margin: 0;
+  margin: 0 0 -10px 0;
 }
 
 .slogan__lead {
@@ -58,13 +59,11 @@
 
 .slogan__link {
   position: relative;
-  top: 245px;
+  top: 241px;
   z-index: 2;
   display: block;
   order: 2;
   margin: 0 auto;
-
-
   font-size: 14px;
   line-height: 18px;
   color: $basic-white;
@@ -72,7 +71,7 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: $basic-green;
-  padding: 7px 70px 7px 75px;
+  padding: 11px 73px 11px 73px;
 
   &:hover {
     background-color: $basic_green-2;
@@ -165,7 +164,6 @@
     color: $basic-black;
     font-size: 60px;
     line-height: 60px;
-    // margin: 0 730px 41px 80px;
     margin: 0 0 41px 80px;
     padding-top: 62px;
   }
