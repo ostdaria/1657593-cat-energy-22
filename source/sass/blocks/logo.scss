@@ -5,14 +5,6 @@
   text-align: center;
   padding: 39px 0 32px 0;
   display: block;
-
-  &:hover path {
-    fill: $special-black-opacity;
-  }
-
-  &:active path {
-    fill: $special-dark-grey-opacity;
-  }
 }
 
 
@@ -21,6 +13,18 @@
     padding: 0;
     border-bottom: none;
     margin: 0;
+  }
+
+  .logo__icon-link {
+    fill: $basic-grey-dark;
+  }
+
+  .logo:hover .logo__icon {
+    fill: $special-black-opacity;
+  }
+
+  .logo:active .logo__icon {
+    fill: $special-dark-grey-opacity;
   }
 }
 

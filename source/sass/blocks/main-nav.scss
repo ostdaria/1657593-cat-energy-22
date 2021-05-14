@@ -223,15 +223,15 @@
     line-height: 29px;
 
     &:nth-child(1) .main-nav__link {
-      margin: 17px 17px 10px 17px;
+      margin: 0 17px 10px 17px;
     }
 
     &:nth-child(2) .main-nav__link {
-      margin: 17px 10px 10px 10px;
+      margin: 0 10px 10px 10px;
     }
 
     &:nth-child(3) .main-nav__link {
-      margin: 17px 0 10px 10px;
+      margin: 0 0 10px 10px;
     }
   }
 
