@@ -78,13 +78,36 @@
   padding: 0;
 }
 
+.main-nav__item:nth-child(1) {
+  &::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: $special-grey-2;
+    width: calc(100% + 40px);
+  }
+}
+
 .main-nav__link {
   text-decoration: none;
   color: $basic-black;
   position: relative;
   display: block;
-  border-top: 1px solid $basic-grey-silver;
-  padding: 25px 0;
+  padding: 22px 0 24px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: $special-grey-2;
+    width: calc(100% + 40px);
+  }
 }
 
 
@@ -174,6 +197,12 @@
     }
   }
 
+  .main-nav__item:nth-child(1) {
+    &::before {
+      display: none;
+    }
+  }
+
   .main-nav__link {
     border: none;
     padding: 0;
@@ -199,6 +228,10 @@
 
     &:active {
       color: $special-dark-grey-opacity;
+    }
+
+    &::after {
+      display: none;
     }
   }
 }

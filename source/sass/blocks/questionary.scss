@@ -9,6 +9,18 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: $special-grey-2;
+    width: calc(100% + 40px);
+  }
 }
 
 .questionary__item {
@@ -73,6 +85,10 @@
     line-height: 30px;
     margin: 0 0 72px 0;
     padding: 0;
+
+    &::after {
+      display: none;
+    }
   }
 
   .questionary__item {

@@ -4,6 +4,18 @@
   list-style: none;
   margin: 0 0 0 0;
   padding: 29px 0 23px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: $special-grey-2;
+    width: calc(100% + 40px);
+  }
 }
 
 .selection__item {
@@ -100,6 +112,10 @@
     margin: 0 0 0 0;
     border: 1px solid $basic-grey-steel;
     max-width: 589px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .selection__item {
