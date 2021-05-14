@@ -54,6 +54,10 @@
         <a class="slogan__link" href="form.html">Подобрать программу</a>
 
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-food-index-desktop.webp 1x, img/image-food-index-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/image-food-index-tablet.webp 1x, img/image-food-index-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/image-food-index-mobile.webp 1x, img/image-food-index-mobile@2x.webp 2x">
+
           <source media="(min-width: 1440px)" srcset="img/image-food-index-desktop.png 1x, img/image-food-index-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/image-food-index-tablet.png 1x, img/image-food-index-tablet@2x.png 2x">
           <img class="slogan__image" src="img/image-food-index-mobile.png" srcset="img/image-food-index-mobile@2x.png" alt="Товар функционального питания «Кэт энерджи»">
@@ -124,6 +128,10 @@
               <ul class="result-using__list">
                 <li class="result-using__item">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-before-desktop.webp 1x, img/cat-before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/img/cat-before-mobile.webp 1x, imgimg/cat-before-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="img/cat-before-desktop.png 1x, img/cat-before-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
                     <img class="result-using__slider__image result-using__slider__image-before" srcset="img/cat-before-mobile.png 1x, img/cat-before-mobile@2x.png 2x" alt="Кот до использования программы функционального питания">
@@ -132,6 +140,10 @@
 
                 <li class="result-using__item">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-after-desktop.webp 1x, img/cat-after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/img/cat-after-mobile.webp 1x, imgimg/cat-after-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="img/cat-after-desktop.png 1x, img/cat-after-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
                     <img class="result-using__slider__image result-using__slider__image-after" srcset="img/cat-after-mobile.png 1x, img/cat-after-mobile@2x.png 2x" alt="Кот после использования программы функционального питания">
@@ -232,21 +244,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      var mainNav= document.querySelector('.main-nav');
-      var mainNavToggle = document.querySelector('.main-nav__toggle');
-
-      mainNav.classList.remove('main-nav--nojs');
-
-      mainNavToggle.addEventListener('click', function() {
-        if (mainNav.classList.contains('main-nav--closed')) {
-          mainNav.classList.remove('main-nav--closed');
-          mainNav.classList.add('main-nav--opened');
-        } else {
-          mainNav.classList.add('main-nav--closed');
-          mainNav.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/toggle.js"></script>
   </body>
 </html>
