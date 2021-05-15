@@ -89,7 +89,7 @@
 @media (min-width: $tablet-width) {
   .features-program {
     margin: 0 auto;
-    padding: 15px 30px 47px 30px;
+    padding: 45px 0 47px 0;
     border-bottom: 1px solid $basic-grey-silver;
   }
 
@@ -207,7 +207,7 @@
   .features-program__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 89px;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
   }

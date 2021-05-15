@@ -13,15 +13,14 @@
 
 @media (min-width: $tablet-width) {
   .selection-program {
-    padding: 0 45px 72px 39px;
-    // padding: 50px 30px 72px 30px;
-    border-top: none;
+    padding: 0 0 72px 0;
+    border: none;
   }
 
   .selection-program__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 51px 0;
+    margin: 34px 0 51px 39px;
     padding: 0;
   }
 }

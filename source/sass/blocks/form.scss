@@ -40,12 +40,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    padding: 0 37px 0 39px;
+  }
+
   .form__description {
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
     font-style: normal;
-    margin: 0 440px 66px 0;
+    margin: 0 308px 66px 0;
   }
 
   .form__wrapper {

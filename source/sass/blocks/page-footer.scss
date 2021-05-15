@@ -12,9 +12,13 @@
   width: auto;
 }
 
-// .page-footer__holder--color {
-//   background-color: $basic-grey;
-// }
+.page-footer__holder {
+  background-color: $basic-white;
+}
+
+.page-footer__holder-color {
+  background-color: $basic-grey;
+}
 
 
 @media (min-width: $tablet-width) {
@@ -24,7 +28,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 125px;
     padding: 55px 30px 35px 30px;
-    // padding: 55px 0 35px 0;
   }
 }
 
@@ -34,7 +37,8 @@
     max-width: 1220px;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 57px 20px 40px 20px;
+    // padding: 57px 20px 40px 20px;
+    padding: 57px 0 40px 0;
     gap: 380px;
   }
 

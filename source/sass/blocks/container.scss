@@ -1,14 +1,11 @@
 .container {
-  position: relative;
-  // width: 280px;
-  // padding: 0 20px;
   margin: 0 auto;
 }
 
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 768px;
+    width: 708px;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -16,8 +13,8 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1260px;
+    width: 1220px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
   }
 }
