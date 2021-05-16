@@ -45,17 +45,13 @@
 
 .catalog__item {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 19px 0 0 0;
+  padding: 45px 0 0 0;
 
   &::after {
     content: "";
     position: absolute;
     left: -20px;
-    right: 0;
-    bottom: 0;
+    bottom: -30px;
     height: 1px;
     background: $special-grey-2;
     width: calc(100% + 40px);
@@ -66,6 +62,10 @@
   }
 }
 
+.catalog__item-holder {
+  display: flex;
+}
+
 .catalog__caption {
   font-weight: normal;
   font-size: 16px;
@@ -74,6 +74,7 @@
   color: $special-dark-grey-2;
   text-decoration: none;
 }
+
 
 .catalog__description {
   font-family: Arial, Helvetica, sans-serif;
@@ -129,13 +130,12 @@
   }
 }
 
-
 .catalog__more-product {
   font-size: 16px;
   line-height: 20px;
   color: $basic-grey-dark;
   text-transform: uppercase;
-  margin: 78px 37px 8px 37px;
+  margin: 105px 37px 8px 37px;
 }
 
 .catalog__slogan {
@@ -170,7 +170,7 @@
     right: 0;
     bottom: 0;
     height: 1px;
-    background: #EBEBEB;
+    background: $special-grey-2;
     width: calc(100% + 40px);
   }
 }
@@ -210,9 +210,6 @@
     margin: 0 0 59px 0;
     padding: 0 36px 40px 36px;
     border-bottom: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 
     &::after {
       display: none;
@@ -221,6 +218,11 @@
     &:nth-child(1) {
       padding: 0 36px 40px 36px;
     }
+  }
+
+  .catalog__item-holder {
+    display: flex;
+    flex-direction: column;
   }
 
   .catalog__image-link {
@@ -240,7 +242,6 @@
     line-height: 24px;
     width: 130px;
     margin: 0 20px 21px 59px;
-    // margin: 0 0 52px 0; //!//
     display: flex;
     text-align: center;
     justify-content: center;
@@ -253,9 +254,8 @@
 
   .catalog__button {
     margin: 0 0 0 0;
-    padding: 10px 0;
+    padding: 10px 93px;
     text-align: center;
-    width: 248px;
   }
 
   .catalog__description {
@@ -341,7 +341,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
-    // gap: 80px;
     padding: 80px 0 0 0;
   }
 
@@ -364,6 +363,10 @@
     }
   }
 
+  .catalog__item-holder {
+    margin-bottom: 15px;
+  }
+
   .catalog__caption {
     width: 130px;
     margin: 0 10px 21px 31px;
@@ -375,12 +378,11 @@
   }
 
   .catalog__button {
-    width: 168px;
-    padding: 10px 0;
+    padding: 10px 53px;
   }
 
   .catalog__button-more {
-    padding: 8px 0;
+    padding: 10px 0;
     width: 169px;
   }
 

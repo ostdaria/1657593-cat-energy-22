@@ -12,7 +12,6 @@
 }
 
 
-
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;
@@ -45,19 +44,36 @@
     fill: $special-grey-3;
   }
 
+  // .social__icon .social__link--vkontakte,
+  // .social__icon .social__link--instagram {
+  //   fill: $special-grey-3;
+
+  //   // &:hover,
+  //   // &:focus {
+  //   //   .social__icon {
+  //   //     fill: $basic-green;
+  //   //   }
+  //   // }
+  // }
+
   .social__link {
     outline: none;
 
-    &:hover,
-    &:focus {
+    &:hover {
       .social__icon {
-        stroke: $basic-green;
+        fill: $basic-green;
       }
     }
 
     &:active {
       .social__icon {
         stroke: $basic-green-opacity;
+      }
+    }
+
+    &:focus {
+      .social__icon {
+        outline: 2px solid $basic-black;
       }
     }
   }

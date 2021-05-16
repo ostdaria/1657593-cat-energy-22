@@ -50,6 +50,7 @@
   .additional-gift {
     background-image: url("../img/gift-background-desktop.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 61px 43px 30px 41px;
     margin: 0;
     max-width: 161px;
@@ -64,9 +65,7 @@
   .additional-gift__icon {
     text-align: center;
     margin: 0 auto 53px;
-    // display: block;
-    // margin: 0;
-    // width: 80px;
-    // height: 82px;
+    width: 80px;
+    height: 82px;
   }
 }
