@@ -131,27 +131,43 @@
     }
 
     &--material {
-      background-image: url("../img/features-background-1.svg");
+      background-image: url("../img/features-background-1@1x.png");
       background-repeat: no-repeat;
       background-position: 130px 40px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/features-background-1@2x.png");
+      }
     }
 
     &--form {
-      background-image: url("../img/features-background-2.svg");
+      background-image: url("../img/features-background-2@1x.png");
       background-repeat: no-repeat;
       background-position: 118px 40px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/features-background-2@2x.png");
+      }
     }
 
     &--replacement {
-      background-image: url("../img/features-background-3.svg");
+      background-image: url("../img/features-background-3@1x.png");
       background-repeat: no-repeat;
       background-position: 119px 40px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/features-background-3@2x.png");
+      }
     }
 
     &--changes {
-      background-image: url("../img/features-background-4.svg");
+      background-image: url("../img/features-background-4@1x.png");
       background-repeat: no-repeat;
       background-position: 112px 40px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/features-background-4@2x.png");
+      }
     }
   }
 

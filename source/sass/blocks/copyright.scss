@@ -1,22 +1,28 @@
 .copyright {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: $special-dark-grey;
-  display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 20px 0 20px 0;
 }
 
 .copyright__link {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: $special-dark-grey;
   text-decoration: none;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__text {
   margin-top: 10px;
+}
+
+.copyright__icon {
+  fill: $special-grey-3;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,25 +32,18 @@
     display: flex;
   }
 
-  .copyright__link {
-    margin-top: 5px;
-  }
-
-  .copyright__link:hover {
+  .copyright__link:active {
     color: $special-dark-grey;
   }
 
-  .copyright__link:active {
-    color: $special-dark-grey-opacity;
-  }
-
-  .copyright__icon {
-    fill: $special-grey-3;
-  }
-
-  .copyright__icon-link {
+  .copyright__link {
     outline: none;
     text-align: right;
+    margin-top: 0;
+
+    &:active {
+      color: $special-dark-grey-opacity;
+    }
 
     &:hover {
       .copyright__icon {
@@ -64,6 +63,12 @@
       }
     }
   }
+
+  .copyright__text {
+    position: relative;
+    left: -10px;
+    margin-top: 6px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -71,7 +76,9 @@
     margin: 0;
   }
 
-  .copyright__link {
-    margin-top: 5px;
+  .copyright__text {
+    margin-right: 10px;
+    top: 0;
+    left: 0;
   }
 }

@@ -1,5 +1,5 @@
 .contacts {
-  padding: 28px 19px 26px 19px;
+  padding: 40px 19px 26px 19px;
 }
 
 .contacts__wrapper {
@@ -10,7 +10,7 @@
 .contacts__title {
   font-size: 16px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 20px;
   color: $basic-grey-dark;
   text-transform: uppercase;
   margin: 0;
@@ -18,7 +18,7 @@
 }
 
 .contacts__text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: $special-dark-grey;

@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/map-mobile@2x.png");
+  }
 }
 
 .map__iframe {
@@ -22,6 +26,10 @@
     background-image: url("/../img/map-tablet.png");
     margin: 0;
     width: auto;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-tablet@2x.png");
+    }
   }
 
   .map__iframe {
@@ -34,5 +42,9 @@
     margin: 0;
     width: auto;
     background-image: url("/../img/map-desktop.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-desktop@2x.png");
+    }
   }
 }

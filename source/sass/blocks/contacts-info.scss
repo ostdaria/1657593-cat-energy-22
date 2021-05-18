@@ -10,14 +10,14 @@
   line-height: 26px;
   color: $basic-black;
   margin: 0 90px 36px 0;
-  padding: 25px 14px 0 0;
+  padding: 28px 14px 0 0;
   background-color: $basic-white;
   display: inline-block;
 
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 55%;
     width: 100vw;
     height: 2px;
     background: $basic-green;
@@ -27,7 +27,7 @@
 
 .contacts-info__list {
   list-style: none;
-  margin: 0 0 14px 0;
+  margin: 0 0 9px 0;
   padding: 0;
 }
 
@@ -59,10 +59,10 @@
   height: 45px;
   border: 1px solid $basic-grey-steel;
   box-sizing: border-box;
-  padding: 14px 50px 14px 15px;
+  padding: 17px 50px 14px 14px;
 
   &::placeholder {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: $special-dark-grey;
@@ -80,18 +80,27 @@
   &:invalid {
     border: 2px solid $status_error;
   }
+}
 
-  &:focus + .contacts-info__icon {
-    fill: $basic-green;
-  }
+.contacts-info__item:nth-child(1) input:focus + .contacts-info__icon {
+  stroke: $basic-green;
+}
 
-  &:invalid + .contacts-info__icon {
-    stroke: $status_error;
-  }
+.contacts-info__item:nth-child(1) input:invalid + .contacts-info__icon {
+  stroke: $status_error;
+}
+
+.contacts-info__item:nth-child(2) input:focus + .contacts-info__icon {
+  fill: $basic-green;
+}
+
+.contacts-info__item:nth-child(2) input:invalid + .contacts-info__icon {
+  fill: $status_error;
 }
 
 .contacts-info__item:nth-child(1) .contacts-info__icon {
   stroke: $special-dark-grey-2;
+  fill: none;
 
   &:hover {
     stroke: $basic-green;
@@ -114,14 +123,14 @@
 
   &--email {
     top: 15px;
-    right: 36px;
+    right: 35px;
     width: 20px;
     height: 15px;
   }
 
   &--phone {
-    top: 11px;
-    right: 36px;
+    top: 12px;
+    right: 34px;
     width: 20px;
     height: 21px;
   }

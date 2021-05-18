@@ -1,10 +1,16 @@
 .logo {
   position: relative;
   border-bottom: 1px solid $basic-grey-neutral;
+  left: -1px;
+  top: -2px;
   margin: 0;
   text-align: center;
-  padding: 39px 0 32px 0;
+  padding: 41px 0 26px 0;
   display: block;
+}
+
+.logo__icon {
+  fill: $basic-grey-dark;
 }
 
 
@@ -13,10 +19,9 @@
     padding: 0;
     border-bottom: none;
     margin: 0;
-  }
-
-  .logo__icon-link {
-    fill: $basic-grey-dark;
+    top: 0;
+    left: 0;
+    text-align: left;
   }
 
   .logo:hover .logo__icon {
