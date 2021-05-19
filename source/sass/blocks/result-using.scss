@@ -13,7 +13,7 @@
 }
 
 .result-using__button-slider {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   border: none;
@@ -218,6 +218,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      // left: -72px;
       height: 72%;
       width: 100%;
       background: linear-gradient(to right, $basic-grey 71.8%, $basic-grey-light 28.2%);
