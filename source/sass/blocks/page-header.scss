@@ -8,6 +8,10 @@
   padding: 13px 0 10px 0;
 }
 
+.page-header__logo {
+  margin: 0 0 -1px 0;
+}
+
 .page-header__logo-image {
   margin: 0;
 
@@ -19,7 +23,6 @@
     opacity: 0.6;
   }
 }
-
 
 .page-header__logo-image-text {
   margin: 0 0 10px 60px;
@@ -35,6 +38,10 @@
     justify-content: space-between;
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  .page-header__logo {
+    margin: 0;
   }
 
   .page-header__logo-image {
@@ -56,11 +63,16 @@
   }
 
   .page-header__holder {
-    padding: 54px 0 32px 0;
+    padding: 54px 0 0 0;
   }
 
   .page-header__logo {
     padding: 0;
+  }
+
+  .page-header__logo-image {
+    width: 239px;
+    height: 57px;
   }
 
   .page-header--preview::before {
@@ -90,7 +102,7 @@
     width: 50%;
     min-height: 694px;
     top: 0;
-    right: 0;
+    right: 1px;
     left: inherit;
     z-index: 2;
     background-color: $basic-green-light;

@@ -18,13 +18,13 @@
   font-size: 24px;
   line-height: 37px;
   margin: 0 0 29px 61px;
-  padding: 9px 0 0 13px;
+  padding: 6px 0 0 11px;
 }
 
 .nutrition-program__item {
   background-color: $basic-grey;
   margin: 0;
-  padding: 21px 20px 18px 19px;
+  padding: 21px 20px 21px 19px;
 
   &:nth-child(1) {
     margin-bottom: 19px;
@@ -33,8 +33,8 @@
   &:nth-child(1) .nutrition-program__title::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: -55px;
+    top: -3px;
+    left: -58px;
     width: 50px;
     height: 53px;
     background-image: url("../img/nutrition-slim-mobile.svg");
@@ -53,7 +53,7 @@
   }
 
   &:nth-child(2) .nutrition-program__title {
-    padding: 9px 0 0 13px;
+    padding: 9px 0 0 11px;
   }
 }
 
@@ -62,13 +62,15 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
-  margin: 0 13px 0 3px;
+  margin: 0 13px 0 1px;
   padding: 0 0 22px 0;
   border-bottom: 1px solid $basic-grey-neutral;
 }
 
 .nutrition-program__link {
   position: relative;
+  top: 6px;
+  left: -3px;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
@@ -111,15 +113,24 @@
 
   .nutrition-program__list {
     padding: 0;
+    margin: -89px 0 0 0;
   }
 
   .nutrition-program__item {
-    padding: 77px 62px 44px 52px;
+    padding: 78px 62px 49px 52px;
+
+    &:nth-child(1) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(2) {
+      padding: 77px 28px 50px 52px;
+    }
 
     &:nth-child(1) .nutrition-program__title::after {
       content: "";
       position: absolute;
-      top: 5px;
+      top: 3px;
       left: 394px;
       width: 200px;
       height: 211px;
@@ -130,17 +141,17 @@
     &:nth-child(2) .nutrition-program__title::after {
       content: "";
       position: absolute;
-      top: 5px;
-      left: 359px;
+      top: 14px;
+      left: 360px;
       width: 268px;
       height: 200px;
       background-image: url("../img/nutrition-weight-tablet.svg");
       background-repeat: no-repeat;
     }
+  }
 
-    &:nth-child(2) {
-      padding: 77px 28px 44px 52px;
-    }
+  .nutrition-program__item:nth-child(2) .nutrition-program__title {
+    padding: 0;
   }
 
   .nutrition-program__item:nth-child(2) .nutrition-program__text {
@@ -150,6 +161,8 @@
   .nutrition-program__title {
     margin: 0 0 24px 0;
     padding: 0;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .nutrition-program__text {
@@ -162,14 +175,17 @@
   }
 
   .nutrition-program__link {
+    position: relative;
+    top: -5px;
+    left: 0;
     font-size: 20px;
     margin: 0;
 
     &::after {
       content: "";
       position: absolute;
-      top: 10px;
-      left: 140px;
+      top: 8px;
+      left: 134px;
     }
   }
 }
@@ -179,17 +195,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 80px;
-    padding: 255px 0 71px 0;
+    padding: 262px 0 71px 0;
+    margin: 0;
   }
 
   .nutrition-program__item {
     &:nth-child(1) {
       margin-bottom: 0;
-      padding: 41px 55px 59px 52px;
+      padding: 41px 55px 52px 52px;
     }
 
     &:nth-child(2) {
-      padding: 41px 92px 59px 33px;
+      padding: 41px 69px 52px 33px;
     }
 
 
@@ -197,7 +214,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: -164px;
+      left: -162px;
       width: 100px;
       height: 106px;
       background-image: url("../img/nutrition-slim-desktop.svg");
@@ -207,8 +224,8 @@
     &:nth-child(2) .nutrition-program__title::after {
       content: "";
       position: absolute;
-      top: 0;
-      left: -164px;
+      top: 6px;
+      left: -181px;
       width: 134px;
       height: 100px;
       background-image: url("../img/nutrition-weight-desktop.svg");
@@ -219,8 +236,13 @@
   .nutrition-program__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 73px 164px;
-    padding: 41px 0 0 0;
+    margin: 0 0 73px 161px;
+    padding: 36px 0 0 0;
+  }
+
+  .nutrition-program__item:nth-child(2) .nutrition-program__title {
+    margin: 0 0 73px 180px;
+    padding: 36px 0 0 0;
   }
 
   .nutrition-program__text {

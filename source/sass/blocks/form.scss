@@ -78,10 +78,6 @@
     padding: 0;
   }
 
-  .form__wrapper {
-    gap: 81px;
-  }
-
   .form__description {
     margin: 0 869px 72px 0;
   }
@@ -89,10 +85,11 @@
   .form__wrapper .form__button {
     max-width: 568px;
     margin: 0 0 0 0;
+    margin-right: 41px;
   }
 
   .form__required-field {
     padding: 0;
-    margin: 15px 0 0 0;
+    margin: 15px 0 0 55px;
   }
 }

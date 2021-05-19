@@ -1,5 +1,5 @@
 .features-program {
-  padding: 27px 21px 42px 21px;
+  padding: 6px 21px 48px 21px;
 }
 
 .features-program__title {
@@ -7,7 +7,7 @@
   line-height: 40px;
   font-weight: normal;
   text-align: left;
-  margin: 0 25px 38px 0;
+  margin: 0 25px 40px 0;
 }
 
 .features-program__list {
@@ -17,12 +17,12 @@
 
 .features-program__item {
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
   list-style: none;
-  margin: 0 0 26px 77px;
+  margin: 0 0 26px 79px;
 
   &:nth-child(4) {
     margin-bottom: 0;
@@ -32,7 +32,7 @@
     content: "";
     position: absolute;
     top: -2px;
-    left: -76px;
+    left: -89px;
     width: 60px;
     height: 60px;
     background-color: $basic-green;
@@ -40,12 +40,11 @@
   }
 }
 
-
 .features-program__item--material::after {
   position: absolute;
   content: "";
-  top: 15px;
-  left: -56px;
+  top: 14px;
+  left: -62px;
   width: 30px;
   height: 32px;
   background-image: url("../img/features-1.svg");
@@ -55,8 +54,8 @@
 .features-program__item--form::after {
   position: absolute;
   content: "";
-  top: 15px;
-  left: -59px;
+  top: 11px;
+  left: -65px;
   width: 30px;
   height: 32px;
   background-image: url("../img/features-2.svg");
@@ -66,8 +65,8 @@
 .features-program__item--replacement::after {
   position: absolute;
   content: "";
-  top: 15px;
-  left: -57px;
+  top: 13px;
+  left: -62px;
   width: 30px;
   height: 32px;
   background-image: url("../img/features-3.svg");
@@ -77,8 +76,8 @@
 .features-program__item--changes::after {
   position: absolute;
   content: "";
-  top: 12px;
-  left: -61px;
+  top: 11px;
+  left: -66px;
   width: 30px;
   height: 32px;
   background-image: url("../img/features-4.svg");
@@ -89,7 +88,7 @@
 @media (min-width: $tablet-width) {
   .features-program {
     margin: 0 auto;
-    padding: 45px 0 47px 0;
+    padding: 45px 0 45px 0;
     border-bottom: 1px solid $basic-grey-silver;
   }
 
@@ -107,12 +106,12 @@
   .features-program__item {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 37px 0;
-    padding: 151px 0 57px 0;
-    width: 230px;
+    margin: 0 0 36px 0;
+    padding: 152px 0 57px 0;
+    width: 247px;
 
     &:nth-child(even) {
-      margin-left: 143px;
+      margin-left: 137px;
     }
 
 
@@ -125,7 +124,7 @@
       content: "";
       position: absolute;
       top: 40px;
-      left: 1px;
+      left: 0;
       width: 80px;
       height: 80px;
     }
@@ -133,7 +132,8 @@
     &--material {
       background-image: url("../img/features-background-1@1x.png");
       background-repeat: no-repeat;
-      background-position: 130px 40px;
+      background-position: 123px 40px;
+      background-size: 74px 228px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/features-background-1@2x.png");
@@ -143,7 +143,8 @@
     &--form {
       background-image: url("../img/features-background-2@1x.png");
       background-repeat: no-repeat;
-      background-position: 118px 40px;
+      background-position: 122px 38px;
+      background-size: 113px 229px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/features-background-2@2x.png");
@@ -153,7 +154,8 @@
     &--replacement {
       background-image: url("../img/features-background-3@1x.png");
       background-repeat: no-repeat;
-      background-position: 119px 40px;
+      background-position: 124px 37px;
+      background-size: 112px 232px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/features-background-3@2x.png");
@@ -163,7 +165,8 @@
     &--changes {
       background-image: url("../img/features-background-4@1x.png");
       background-repeat: no-repeat;
-      background-position: 112px 40px;
+      background-position: 124px 40px;
+      background-size: 120px 226px;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/features-background-4@2x.png");
@@ -174,8 +177,8 @@
   .features-program__item--material::after {
     position: absolute;
     content: "";
-    top: 66px;
-    left: 29px;
+    top: 67px;
+    left: 27px;
     width: 30px;
     height: 32px;
   }
@@ -183,8 +186,8 @@
   .features-program__item--form::after {
     position: absolute;
     content: "";
-    top: 66px;
-    left: 27px;
+    top: 64px;
+    left: 25px;
     width: 30px;
     height: 32px;
   }
@@ -192,7 +195,7 @@
   .features-program__item--replacement::after {
     position: absolute;
     content: "";
-    top: 66px;
+    top: 65px;
     left: 28px;
     width: 30px;
     height: 32px;
@@ -201,8 +204,8 @@
   .features-program__item--changes::after {
     position: absolute;
     content: "";
-    top: 66px;
-    left: 26px;
+    top: 63px;
+    left: 24px;
     width: 30px;
     height: 32px;
   }
@@ -210,7 +213,7 @@
 
 @media (min-width: $desktop-width) {
   .features-program {
-    padding: 30px 0 0 0;
+    padding: 0 0 0 0;
     border-bottom: none;
   }
 
@@ -242,8 +245,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 40px;
-      left: 1px;
+      top: 39px;
+      left: -1px;
     }
   }
 }

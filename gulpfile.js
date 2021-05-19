@@ -145,10 +145,10 @@ const reload = (done) => {
 
 const watcher = () => {
   livereload.listen();
-  livereload.reload('./build/**/*.html');
-  gulp.watch("build/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("build/js/scripts.js", gulp.series(scripts));
-  gulp.watch("build/*.html", gulp.series(html, reload));
+  livereload.reload('./source/**/*.html');
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/js/scripts.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 //Build

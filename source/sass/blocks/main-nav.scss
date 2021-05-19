@@ -78,10 +78,23 @@
   padding: 0;
 }
 
-.main-nav__item:nth-child(1) {
+.main-nav__item {
   position: relative;
 
   &::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    height: 1px;
+    background: $special-grey-2;
+    width: calc(100% + 40px);
+  }
+}
+
+.main-nav__item:nth-child(3) {
+  &::after {
     content: "";
     position: absolute;
     left: -20px;
@@ -99,17 +112,6 @@
   color: $basic-black;
   display: block;
   padding: 22px 0 24px 0;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: -20px;
-    bottom: 0;
-    height: 1px;
-    background: $special-grey-2;
-    width: calc(100% + 40px);
-    z-index: 1;
-  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -125,7 +127,6 @@
     min-height: 20vh;
     background-color: $basic-white;
     text-align: center;
-    z-index: 0;
   }
 
   .main-nav--opened .main-nav__wrapper::before {
@@ -170,7 +171,7 @@
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 15px 0 0 73px;
+    margin: 18px 0 0 90px;
   }
 
   .main-nav__item {
@@ -180,21 +181,25 @@
     line-height: 24px;
 
     &:nth-child(1) .main-nav__link {
-      margin: 0 16px 0 0;
+      margin: 0 32px 0 0;
     }
 
     &:nth-child(2) .main-nav__link {
-      margin: 0 18px 0 17px;
+      margin: 0 20px 0 0;
     }
 
     &:nth-child(3) .main-nav__link {
-      margin: 0 0 0 18px;
+      margin: 0 20 0 0;
     }
-  }
 
-  .main-nav__item:nth-child(1) {
     &::before {
       display: none;
+    }
+
+    &:nth-child(3) {
+      &::after {
+        display: none;
+      }
     }
   }
 
@@ -205,7 +210,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 35px;
+      top: 32px;
       right: 0;
       bottom: 0;
       left: 0;
@@ -252,15 +257,15 @@
     line-height: 29px;
 
     &:nth-child(1) .main-nav__link {
-      margin: 0 17px 10px 17px;
+      margin: 0 17px 10px 0;
     }
 
     &:nth-child(2) .main-nav__link {
-      margin: 0 10px 10px 10px;
+      margin: 0 10px 10px 0;
     }
 
     &:nth-child(3) .main-nav__link {
-      margin: 0 0 10px 10px;
+      margin: 0 0 10px 0;
     }
   }
 

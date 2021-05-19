@@ -265,17 +265,7 @@
 
   .additionally__item {
     margin-bottom: 30px;
-
-    &:nth-child(1) {
-      margin-right: 105px;
-    }
-
-    &:nth-child(2) {
-      margin-right: 98px; //137px//
-    }
-
-    &:nth-child(3) {
-      margin-right: 198px;
-    }
+    min-width: 221px;
+    margin-right: 104px;
   }
 }

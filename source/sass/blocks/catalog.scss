@@ -73,10 +73,12 @@
   text-transform: uppercase;
   color: $special-dark-grey-2;
   text-decoration: none;
+  display: block;
+  width: 76px;
 }
 
 .catalog__description {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
@@ -138,7 +140,7 @@
 }
 
 .catalog__slogan {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
@@ -245,10 +247,6 @@
     display: flex;
     text-align: center;
     justify-content: center;
-  }
-
-  .catalog__caption br {
-    display: none;
   }
 
   .catalog__information {

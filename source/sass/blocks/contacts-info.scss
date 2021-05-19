@@ -212,7 +212,7 @@
 
   .contacts-info__list {
     display: flex;
-    gap: 30px;
+    // gap: 30px;
     justify-content: space-between;
   }
 
@@ -237,6 +237,14 @@
       padding: 16px 20px 10px 16px;
       margin: 0 0 14px 17px;
     }
+  }
+
+  .contacts-info__item:nth-child(1) {
+    margin-right: 39px;
+  }
+
+  .contacts-info__item:nth-child(2) {
+    margin-left: 39px;
   }
 
   .contacts-info__item .contacts-info__icon {
