@@ -39,8 +39,8 @@
   }
 
   .copyright__icon {
-    top: -2px;
-    left: 8px;
+    margin-left: 5px;
+    margin-top: -3px;
   }
 
   .copyright__link {
@@ -69,7 +69,6 @@
 
   .copyright__text {
     position: relative;
-    left: -15px;
     margin-top: 6px;
   }
 }
@@ -77,13 +76,15 @@
 @media (min-width: $desktop-width) {
   .copyright {
     margin: 0;
-    top: 2px;
-    left: 2px;
   }
 
   .copyright__text {
     margin-right: 10px;
-    top: 3px;
-    left: -11px;
+    margin-top: 3px;
+    // left: -11px;
+  }
+
+  .copyright__icon {
+    margin-top: 0;
   }
 }

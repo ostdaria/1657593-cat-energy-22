@@ -3,7 +3,7 @@
   font-size: 24px;
   font-weight: normal;
   line-height: 26px;
-  margin: 0 100px 37px 0;
+  margin: 0 100px 38px 0;
   padding: 0 22px 0 0;
   background-color: $basic-white;
   max-width: 120px;
@@ -30,7 +30,7 @@
   resize: none;
   width: 251px;
   height: 129px;
-  margin: 0 0 18px 0;
+  margin: 0 0 17px 0;
   padding: 10px 12px 10px 15px;
 }
 
@@ -38,14 +38,14 @@
   .comments__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 100px 76px 0;
+    margin: 0 100px 75px 0;
     padding: 0 41px 0 0;
     max-width: 180px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 22px;
+      top: 21px;
       right: 120%;
       height: 2px;
       width: 100vw;
@@ -56,7 +56,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 22px;
+      top: 21px;
       width: 100vw;
       height: 2px;
       background: $basic-green;
@@ -68,9 +68,9 @@
     font-size: 20px;
     line-height: 30px;
     width: 600px;
-    height: 163px;
+    height: 162px;
     text-align: left;
-    margin: 0 0 65px 0;
+    margin: 0 0 60px 0;
     padding: 10px 10px 0 19px;
   }
 }
@@ -79,7 +79,7 @@
   .comments__textarea {
     width: 1189px;
     text-align: left;
-    margin: 0 0 62px 0;
+    margin: 0 0 63px 0;
     padding: 9px 10px 0 19px;
   }
 }

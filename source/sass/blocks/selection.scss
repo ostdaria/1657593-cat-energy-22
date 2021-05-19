@@ -41,7 +41,7 @@
   content: "";
   position: absolute;
   top: -6px;
-  left: -46px;
+  left: -45px;
   width: 28px;
   height: 28px;
   border-radius: 50px;
@@ -73,7 +73,6 @@
   border-radius: 50px;
   border: 1px solid $basic-grey-1-opacity;
 }
-
 
 .selection__input:checked:disabled + label::before {
   content: "";
@@ -109,10 +108,10 @@
 
 @media (min-width: $tablet-width) {
   .selection {
-    padding: 20px;
+    padding: 20px 20px 29px 20px;
     margin: 0 0 0 0;
     border: 1px solid $basic-grey-steel;
-    max-width: 589px;
+    max-width: 630px;
 
     &::after {
       display: none;
@@ -122,6 +121,7 @@
   .selection__item {
     font-size: 20px;
     line-height: 30px;
+    margin: 0 0 23px 0;
 
     &:nth-child(3) {
       margin-bottom: 0;
@@ -129,14 +129,14 @@
   }
 
   .selection__item label {
-    margin: 2px 0 0 58px;
+    margin: 9px 0 0 69px;
   }
 
   .selection__input + label::before {
     content: "";
     position: absolute;
-    top: -4px;
-    left: -59px;
+    top: -5px;
+    left: -60px;
     width: 38px;
     height: 38px;
     border-radius: 50px;
@@ -146,8 +146,8 @@
   .selection__input:checked + label::after {
     content: "";
     position: absolute;
-    top: 7px;
-    left: -48px;
+    top: 6px;
+    left: -49px;
     width: 18px;
     height: 18px;
     border-radius: 50px;
@@ -157,8 +157,8 @@
   .selection__input:disabled + label::before {
     content: "";
     position: absolute;
-    top: -4px;
-    left: -59px;
+    top: -5px;
+    left: -60px;
     width: 38px;
     height: 38px;
     border-radius: 50px;
@@ -168,8 +168,8 @@
   .selection__input:checked:disabled + label::before {
     content: "";
     position: absolute;
-    top: -4px;
-    left: -59px;
+    top: -5px;
+    left: -60px;
     width: 38px;
     height: 38px;
     border-radius: 50px;
@@ -179,25 +179,28 @@
   .selection__input:checked:disabled + label::after {
     content: "";
     position: absolute;
-    top: 7px;
-    left: -48px;
+    top: 6px;
+    left: -49px;
     width: 18px;
     height: 18px;
     border-radius: 50px;
     background-color: $basic-green-opacity;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .selection {
     font-size: 20px;
     line-height: 30px;
-    padding: 26px 250px 30px 28px;
+    padding: 26px 251px 28px 28px;
     margin: -6px 0 0 0;
   }
 
   .selection__item:nth-child(3) {
     margin-bottom: 0;
+  }
+
+  .selection__item label {
+    margin: 3px 0 0 59px;
   }
 }

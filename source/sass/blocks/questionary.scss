@@ -38,14 +38,12 @@
     width: 202px;
     margin: 0 0 0 12px;
     padding: 15px 18px 10px 15px;
-    // padding: 14px 50px 10px 16px;
   }
 
   &:nth-child(3) .questionary__input {
     width: 172px;
     margin: 0 0 0 10px;
     padding: 20px 10px 15px 17px;
-    // padding: 15px 50px 10px 13px;
   }
 }
 
@@ -54,7 +52,6 @@
 }
 
 .questionary__input {
-  // width: 100%;
   height: 45px;
   border: 1px solid $basic-grey-steel;
   box-sizing: border-box;
@@ -84,7 +81,7 @@
   .questionary {
     font-size: 20px;
     line-height: 30px;
-    margin: 0 0 72px 0;
+    margin: 0 0 52px 0;
     padding: 0;
 
     &::after {
@@ -94,6 +91,7 @@
 
   .questionary__item {
     padding: 0;
+    margin-bottom: 20px;
 
     &:nth-child(1) .questionary__input {
       width: 567px;
@@ -111,10 +109,6 @@
       width: 497px;
       margin: 0 0 0 18px;
       padding: 22px 19px 16px 17px;
-    }
-
-    &:nth-child(3) {
-      margin-bottom: 0;
     }
 
     &:nth-child(1) label {
@@ -136,13 +130,12 @@
     &::placeholder {
       font-size: 20px;
     }
-    // padding: 16px 19px 16px 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .questionary {
-    margin: 0 80px 0 0;
+    margin: 0 78px 0 0;
   }
 
   .questionary__item {
