@@ -33,11 +33,6 @@
   margin: 0 auto;
 }
 
-// .result-using__slider__image {
-//   width: 311px;
-//   height: 232px;
-// }
-
 .result-using__slider__image-before {
   margin-top: 42px;
 }
@@ -74,7 +69,6 @@
   margin: 0;
 }
 
-
 @media (min-width: $tablet-width) {
   .result-using__container {
     position: relative;
@@ -83,7 +77,6 @@
   }
 
   .result-using__holder {
-    // padding: 0;
     width: 708px;
     margin: 0 auto;
     padding: 0 30px;
