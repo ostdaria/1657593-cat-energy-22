@@ -8,7 +8,7 @@
   list-style: none;
   padding: 0 20px 20px 20px;
   margin: 0;
-  margin-top: -15px;
+  margin-top: -19px;
 }
 
 .nutrition-program__title {
@@ -24,7 +24,7 @@
 .nutrition-program__item {
   background-color: $basic-grey;
   margin: 0;
-  padding: 21px 20px 21px 19px;
+  padding: 24px 20px 21px 19px;
 
   &:nth-child(1) {
     margin-bottom: 19px;
@@ -44,7 +44,7 @@
   &:nth-child(2) .nutrition-program__title::after {
     content: "";
     position: absolute;
-    top: 3px;
+    top: 0;
     left: -67px;
     width: 67px;
     height: 50px;
@@ -53,7 +53,7 @@
   }
 
   &:nth-child(2) .nutrition-program__title {
-    padding: 9px 0 0 11px;
+    padding: 6px 0 0 11px;
   }
 }
 

@@ -22,8 +22,7 @@
 }
 
 .copyright__icon {
-  position: relative;
-  top: 2px;
+  margin-top: 3px;
   fill: $special-grey-3;
 }
 
@@ -32,6 +31,7 @@
     padding: 0;
     margin: 0;
     display: flex;
+    justify-self: right;
   }
 
   .copyright__link:active {
@@ -39,8 +39,7 @@
   }
 
   .copyright__icon {
-    margin-left: 5px;
-    margin-top: -3px;
+    margin-top: 2px;
   }
 
   .copyright__link {
@@ -69,7 +68,8 @@
 
   .copyright__text {
     position: relative;
-    margin-top: 6px;
+    margin-top: 10px;
+    margin-right: 24px;
   }
 }
 
@@ -79,11 +79,11 @@
   }
 
   .copyright__text {
-    margin-right: 10px;
-    margin-top: 3px;
+    margin-right: 23px;
+    margin-top: 10px;
   }
 
   .copyright__icon {
-    margin-top: 0;
+    margin-top: 2px;
   }
 }
