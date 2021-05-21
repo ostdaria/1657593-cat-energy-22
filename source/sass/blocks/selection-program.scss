@@ -1,5 +1,5 @@
 .selection-program {
-  padding: 27px 20px 20px 20px;
+  padding: 27px 20px 32px 20px;
   border-top: 1px solid $basic-grey-neutral;
 }
 
@@ -20,8 +20,8 @@
   .selection-program__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 34px 0 51px 39px;
-    padding: 0;
+    margin: 29px 0 51px 40px;
+    padding: 0 0 4px 0;
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   .selection-program {
-    padding: 37px 0 82px 0;
+    padding: 71px 0 82px 0;
   }
 
   .selection-program__title {

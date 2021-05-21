@@ -7,28 +7,39 @@
   align-items: center;
   gap: 33px;
   margin: 0;
-  padding: 20px 0 21px 0;
+  padding: 19px 0 15px 0;
   text-align: center;
 }
 
-
+.social__icon {
+  fill: $special-grey-3;
+}
 
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;
     border-bottom: none;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 34px;
 
     &::after {
       display: none;
     }
   }
 
+  .social__item {
+    width: 55px;
+    text-align: center;
+  }
+
   .social__link--vkontakte svg {
-    width: 29px;
-    height: 17px;
+    width: 30px;
+    height: 20px;
   }
 
   .social__link--instagram svg {
@@ -41,17 +52,12 @@
     height: 27px;
   }
 
-  .social__icon {
-    fill: $special-grey-3;
-  }
-
   .social__link {
     outline: none;
 
-    &:hover,
-    &:focus {
+    &:hover {
       .social__icon {
-        stroke: $basic-green;
+        fill: $basic-green;
       }
     }
 
@@ -60,22 +66,28 @@
         stroke: $basic-green-opacity;
       }
     }
+
+    &:focus {
+      .social__icon {
+        outline: 2px solid $basic-black;
+      }
+    }
   }
-
-  // .social__item:hover .social__icon {
-  //   stroke: $basic-green;
-  // }
-
-  // .social__icon:hover path {
-  //   fill: $basic-green;
-  // }
 }
 
 @media (min-width: $desktop-width) {
   .social {
-    padding: 0;
-    border-bottom: none;
+    padding: 0 5px 0 4px;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social__item {
+    width: 48px;
   }
 }
-

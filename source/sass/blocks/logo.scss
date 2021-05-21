@@ -1,22 +1,25 @@
 .logo {
   position: relative;
   border-bottom: 1px solid $basic-grey-neutral;
-  margin: 0;
+  left: 0;
+  margin: -4px 0 0 0;
   text-align: center;
-  padding: 39px 0 32px 0;
+  padding: 41px 0 26px 0;
   display: block;
 }
 
+.logo__icon {
+  fill: $basic-grey-dark;
+}
 
 @media (min-width: $tablet-width) {
   .logo {
     padding: 0;
     border-bottom: none;
-    margin: 0;
-  }
-
-  .logo__icon-link {
-    fill: $basic-grey-dark;
+    margin: 8px 0 0 0;
+    text-align: left;
+    display: flex;
+    justify-self: left;
   }
 
   .logo:hover .logo__icon {
@@ -31,5 +34,7 @@
 @media (min-width: $desktop-width) {
   .logo {
     margin: 0;
+    margin-top: 3px;
+    text-align: left;
   }
 }

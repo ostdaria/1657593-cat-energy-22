@@ -1,5 +1,5 @@
 .contacts {
-  padding: 28px 19px 26px 19px;
+  padding: 28px 19px 28px 19px;
 }
 
 .contacts__wrapper {
@@ -10,7 +10,7 @@
 .contacts__title {
   font-size: 16px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 20px;
   color: $basic-grey-dark;
   text-transform: uppercase;
   margin: 0;
@@ -18,7 +18,7 @@
 }
 
 .contacts__text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: $special-dark-grey;
@@ -26,20 +26,19 @@
   max-width: 140px;
 }
 
-
 @media (min-width: $tablet-width) {
   .contacts {
     padding: 0;
   }
 
   .contacts__wrapper {
-    padding: 62px 72px 51px 71px;
+    padding: 66px 43px 59px 41px;
     gap: 240px;
   }
 
   .contacts__title {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 25px;
     max-width: 170px;
   }
 
@@ -68,14 +67,14 @@
     position: absolute;
     top: 95px;
     left: 40px;
-    padding: 66px 90px 65px 77px;
+    padding: 66px 85px 61px 77px;
     background-color: $basic-white;
-    gap: 73px;
+    gap: 78px;
   }
 
   .contacts__title {
     font-weight: normal;
-    line-height: 23px;
+    line-height: 25px;
   }
 
   .contacts__text {
@@ -85,6 +84,6 @@
 
   .contacts__text span {
     display: block;
-    margin-top: 15px;
+    margin-top: 19px;
   }
 }

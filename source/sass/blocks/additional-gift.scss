@@ -4,10 +4,15 @@
   background-repeat: no-repeat;
   padding: 53px 61px 43px 58px;
   margin-top: 39px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/gift-background-mobile@2x.jpg");
+    background-size: contain;
+  }
 }
 
 .additional-gift__description {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
@@ -16,6 +21,9 @@
 }
 
 .additional-gift__icon {
+  position: relative;
+  top: 5px;
+  left: 1px;
   display: block;
   margin: 0 auto 53px;
 }
@@ -23,12 +31,16 @@
 @media (min-width: $tablet-width) {
   .additional-gift {
     padding: 57px 124px 60px 78px;
-    margin-top: 59px;
+    margin: 72px 0 0 0;
     background-image: url("../img/gift-background-tablet.jpg");
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     max-width: 506px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-background-tablet@2x.jpg");
+    }
   }
 
   .additional-gift__icon {
@@ -36,6 +48,9 @@
     margin: 0;
     width: 80px;
     height: 82px;
+    position: relative;
+    top: 0;
+    left: 0;
   }
 
   .additional-gift__description {
@@ -50,23 +65,29 @@
   .additional-gift {
     background-image: url("../img/gift-background-desktop.jpg");
     background-repeat: no-repeat;
-    padding: 61px 43px 30px 41px;
+    background-size: cover;
+    padding: 51px 43px 33px 41px;
     margin: 0;
     max-width: 161px;
     display: block;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-background-desktop@2x.jpg");
+    }
   }
 
   .additional-gift__description {
-    margin: 59px 0 0 0;
+    margin: 55px 0 0 0;
     text-align: center;
   }
 
   .additional-gift__icon {
     text-align: center;
     margin: 0 auto 53px;
-    // display: block;
-    // margin: 0;
-    // width: 80px;
-    // height: 82px;
+    width: 80px;
+    height: 82px;
+    position: relative;
+    top: 5px;
+    left: 2px;
   }
 }

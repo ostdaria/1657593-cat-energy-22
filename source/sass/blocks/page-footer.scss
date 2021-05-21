@@ -20,14 +20,14 @@
   background-color: $basic-grey;
 }
 
-
 @media (min-width: $tablet-width) {
   .page-footer__container {
-    display: grid;
     max-width: 708px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 125px;
-    padding: 55px 30px 35px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 51px 30px 35px 30px;
   }
 }
 
@@ -37,9 +37,8 @@
     max-width: 1220px;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    // padding: 57px 20px 40px 20px;
     padding: 57px 0 40px 0;
-    gap: 380px;
+    gap: 365px;
   }
 
   .page-footer__holder {

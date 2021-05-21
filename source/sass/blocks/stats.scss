@@ -1,5 +1,5 @@
 .stats__text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -12,45 +12,42 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: 0 0 34px 0;
   padding: 0;
-  margin-bottom: 30px;
 }
 
 .stats__item {
-  width: 124px;
-  padding: 15px 0 5px 0;
-  text-align: center;
+  position: relative;
+  width: 122px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border: 1px solid $special-grey;
   border-radius: 3px;
-  margin: 0;
-}
-
-.stats__container {
-  max-width: 105px;
-  margin: 0 auto;
-  margin-bottom: -20px;
-  background: $basic-grey-light;
 }
 
 .stats__amount {
   font-size: 24px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
   text-transform: uppercase;
+  margin: auto;
+  text-align: center;
 }
 
 .stats__amount-description {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Arial", "Helvetica", sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -14px;
+  margin: 0 auto;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  text-transform: lowercase;
   color: $special-dark-grey;
+  background-color: $basic-grey-light;
   width: 77px;
-  margin: 0 auto;
-  margin-top: 8px;
 }
 
 .stats__about-price {
@@ -80,16 +77,10 @@
   }
 
   .stats__item {
-    width: 162px;
-    padding: 19px 0 19px 0;
-  }
-
-  .stats__container {
-    margin: 0 auto;
-    max-width: 142px;
-    padding: 0;
-    margin-bottom: -25px;
+    width: 160px;
     background: $basic-white;
+    padding-top: 14px;
+    padding-bottom: 19px;
   }
 
   .stats__amount {
@@ -98,10 +89,24 @@
   }
 
   .stats__amount-description {
-    width: 142px;
+    position: absolute;
+    left: 8px;
+    right: 0;
+    bottom: -5px;
+    padding: 0;
     font-size: 14px;
     line-height: 14px;
     margin: 6px 0 0 0;
+    background: $basic-white;
+  }
+
+  .stats__item--weight .stats__amount-description {
+    width: 115px;
+    margin-left: 15px;
+  }
+
+  .stats__item--days .stats__amount-description {
+    width: 139px;
   }
 
   .stats__about-price {
@@ -112,13 +117,18 @@
     margin: 0;
     max-width: 174px;
   }
+
+  .stats__about-price span {
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .stats__text {
     font-size: 16px;
     line-height: 24px;
-    margin: 137px 197px 69px 0;
+    margin: 147px 271px 68px 0;
   }
 
   .stats__wrapper {
@@ -127,12 +137,17 @@
     margin: 0;
   }
 
-  .stats__container {
+  .stats__item {
+    width: 159px;
     background: $basic-grey;
   }
 
   .stats__list {
     display: flex;
+  }
+
+  .stats__amount-description {
+    background-color: $basic-grey;
   }
 
   .stats__about-price {
@@ -142,6 +157,11 @@
     margin: 0;
     display: flex;
     max-width: none;
-    gap: 70px;
+    gap: 62px;
+  }
+
+  .stats__about-price span {
+    display: block;
+    margin-top: 0;
   }
 }
