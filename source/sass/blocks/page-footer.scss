@@ -24,8 +24,9 @@
   .page-footer__container {
     max-width: 708px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: row;
-    gap: 133px;
     padding: 51px 30px 35px 30px;
   }
 }

@@ -171,7 +171,7 @@
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 18px 0 0 90px;
+    margin: 18px 0 0 93px;
   }
 
   .main-nav__item {
@@ -179,13 +179,15 @@
     display: block;
     font-size: 18px;
     line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
 
     &:nth-child(1) .main-nav__link {
       margin: 0 32px 0 0;
     }
 
     &:nth-child(2) .main-nav__link {
-      margin: 0 20px 0 0;
+      margin: 0 39px 0 0;
     }
 
     &:nth-child(3) .main-nav__link {
@@ -269,7 +271,7 @@
   }
 
   .main-nav__item--active .main-nav__link::before {
-    top: 33px;
+    top: 34px;
   }
 
   .main-nav__list-index .main-nav__link {
@@ -291,5 +293,19 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__list--catalog .main-nav__item {
+    &:nth-child(1) .main-nav__link {
+      margin: 0 13px 10px 0;
+    }
+
+    &:nth-child(2) .main-nav__link {
+      margin: 0 34px 10px 23px;
+    }
+
+    &:nth-child(3) .main-nav__link {
+      margin: 0 0 10px 0;
+    }
   }
 }

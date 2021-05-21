@@ -19,13 +19,22 @@
   .social {
     padding: 0;
     border-bottom: none;
+    gap: 0;
     display: flex;
-    margin-left: 20px;
-    max-width: 129px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 34px;
 
     &::after {
       display: none;
     }
+  }
+
+  .social__item {
+    width: 55px;
+    text-align: center;
   }
 
   .social__link--vkontakte svg {
@@ -68,9 +77,17 @@
 
 @media (min-width: $desktop-width) {
   .social {
-    padding: 0;
-    border-bottom: none;
+    padding: 0 5px 0 4px;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social__item {
+    width: 48px;
   }
 }
-

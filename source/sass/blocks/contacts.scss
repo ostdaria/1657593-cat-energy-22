@@ -26,7 +26,6 @@
   max-width: 140px;
 }
 
-
 @media (min-width: $tablet-width) {
   .contacts {
     padding: 0;
@@ -39,7 +38,7 @@
 
   .contacts__title {
     font-size: 20px;
-    line-height: 22px;
+    line-height: 25px;
     max-width: 170px;
   }
 
@@ -75,7 +74,7 @@
 
   .contacts__title {
     font-weight: normal;
-    line-height: 23px;
+    line-height: 25px;
   }
 
   .contacts__text {
@@ -85,6 +84,6 @@
 
   .contacts__text span {
     display: block;
-    margin-top: 15px;
+    margin-top: 19px;
   }
 }
