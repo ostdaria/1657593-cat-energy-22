@@ -29,26 +29,28 @@
   display: flex;
 
   &:nth-child(1) .questionary__input {
-    width: 229px;
+    width: 100%;
     margin: 0 0 0 11px;
     padding: 15px 43px 10px 15px;
   }
 
   &:nth-child(2) .questionary__input {
-    width: 202px;
-    margin: 0 0 0 12px;
+    width: 100%;
+    margin: 0 0 0 15px;
     padding: 15px 18px 10px 15px;
   }
 
   &:nth-child(3) .questionary__input {
-    width: 172px;
+    width: 100%;
     margin: 0 0 0 10px;
     padding: 20px 10px 15px 17px;
   }
 }
 
 .questionary__item label {
-  margin-top: 13px;
+  margin-top: 14px;
+  margin-left: -2px;
+  white-space: nowrap;
 }
 
 .questionary__input {
@@ -122,6 +124,10 @@
     &:nth-child(3) label {
       margin-top: 9px;
     }
+  }
+
+  .questionary__item label {
+    margin-left: 0;
   }
 
   .questionary__input {

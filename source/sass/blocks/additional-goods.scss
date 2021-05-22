@@ -46,7 +46,7 @@
 }
 
 .additional-goods__quantity {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: $special-dark-grey;
@@ -54,7 +54,7 @@
 }
 
 .additional-goods__price {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: $special-dark-grey;
@@ -78,6 +78,8 @@
   padding: 10px 109px;
   margin: 15px 0 0 0;
   text-decoration: none;
+  text-align: center;
+  width: 100%;
 
   &:hover {
     background-color: $basic_green-2;
@@ -199,7 +201,8 @@
   }
 
   .additional-goods__button {
-    padding: 10px 92px;
+    padding: 10px 0;
+    width: 244px;
     text-align: center;
     position: relative;
     top: -2px;

@@ -3,7 +3,7 @@
   font-size: 24px;
   font-weight: normal;
   line-height: 26px;
-  margin: 0 100px 38px 0;
+  margin: 11px 100px 38px 0;
   padding: 0 22px 0 0;
   background-color: $basic-white;
   max-width: 120px;
@@ -28,10 +28,11 @@
   text-align: left;
   border: 1px solid $basic-grey-steel;
   resize: none;
-  width: 251px;
-  height: 129px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 151px;
   margin: 0 0 17px 0;
-  padding: 10px 12px 10px 15px;
+  padding: 9px 12px 10px 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,8 +68,8 @@
   .comments__textarea {
     font-size: 20px;
     line-height: 30px;
-    width: 600px;
-    height: 162px;
+    width: 632px;
+    height: 174px;
     text-align: left;
     margin: 0 0 60px 0;
     padding: 10px 10px 0 19px;
@@ -77,7 +78,8 @@
 
 @media (min-width: $desktop-width) {
   .comments__textarea {
-    width: 1189px;
+    width: 1220px;
+    min-height: 172px;
     text-align: left;
     margin: 0 0 63px 0;
     padding: 9px 10px 0 19px;

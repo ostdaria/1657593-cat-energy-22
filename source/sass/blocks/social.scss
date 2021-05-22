@@ -50,6 +50,9 @@
   .social__link--facebook svg {
     width: 13px;
     height: 27px;
+    position: relative;
+    left: -8px;
+    top: 2px;
   }
 
   .social__link {
@@ -89,5 +92,11 @@
 
   .social__item {
     width: 48px;
+  }
+
+  .social__link--facebook svg {
+    position: relative;
+    left: -1px;
+    top: 2px;
   }
 }

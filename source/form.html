@@ -77,7 +77,7 @@
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип сайта «Кэт энерджи»">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип сайта «Кэт энерджи»">
             </picture>
           </a>
 
@@ -151,24 +151,28 @@
                   <ul class="contacts-info__list">
                     <li class="contacts-info__item">
                       <label for="contacts-info__mail">E-mail:*</label>
-                      <input class="contacts-info__input" type="text" id="contacts-info__mail" name="mail" placeholder="kuklachev@gmail.com">
-                      <svg class="contacts-info__icon contacts-info__icon--email" width="20" height="15">
-                        <use xlink:href="#icon-email"></use>
-                      </svg>
+                      <div class="contacts-info__holder">
+                        <input class="contacts-info__input" type="email" id="contacts-info__mail" name="mail" placeholder="kuklachev@gmail.com">
+                        <svg class="contacts-info__icon contacts-info__icon--email" width="20" height="15">
+                          <use xlink:href="#icon-email"></use>
+                        </svg>
+                      </div>
                     </li>
                     <li class="contacts-info__item">
                       <label for="contacts-info__phone">Телефон:*</label>
-                      <input class="contacts-info__input" type="text" id="contacts-info__phone" name="phone" placeholder="8 (960) 900-60-90">
-                      <svg class="contacts-info__icon contacts-info__icon--phone" width="20" height="21">
-                        <use xlink:href="#icon-phone"></use>
-                      </svg>
+                      <div class="contacts-info__holder">
+                        <input class="contacts-info__input" type="tel" id="contacts-info__phone" name="phone" placeholder="8 (960) 900-60-90">
+                        <svg class="contacts-info__icon contacts-info__icon--phone" width="20" height="21">
+                          <use xlink:href="#icon-phone"></use>
+                        </svg>
+                      </div>
                     </li>
                   </ul>
                 </fieldset>
 
                 <div class="form__comments comments">
                   <h2 class="comments__title">Комментарий</h2>
-                  <textarea class="comments__textarea" name="text" id="comment-field" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+                  <textarea class="comments__textarea" name="text" id="comment-field">Расскажите обо всех повадках кота</textarea>
                 </div>
 
                 <fieldset class="form__additionally additionally">
