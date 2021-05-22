@@ -1,4 +1,4 @@
-const gulp = require("gulp");
+const gulp = require("gulp"); //
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
@@ -145,7 +145,7 @@ const reload = (done) => {
 
 const watcher = () => {
   livereload.listen();
-  livereload.reload("./source/**/*.html");
+  livereload.reload('./source/**/*.html');
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/scripts.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
