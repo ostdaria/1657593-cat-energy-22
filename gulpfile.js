@@ -15,7 +15,6 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 
-
 // Styles
 
 const styles = () => {
@@ -86,7 +85,14 @@ const optimizeImages = () => {
     .pipe(gulp.dest("build/img"))
 }
 
-exports.optimizeImages = optimizeImages;
+exports.images = optimizeImages;
+
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.images = copyImages;
 
 //WebP
 
@@ -145,7 +151,7 @@ const reload = (done) => {
 
 const watcher = () => {
   livereload.listen();
-  livereload.reload('./source/**/*.html');
+  livereload.reload("./source/**/*.html");
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/scripts.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
@@ -171,5 +177,17 @@ exports.build = build;
 //Default
 
 exports.default = gulp.series(
-  styles, server, watcher
-);
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    sprite,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
